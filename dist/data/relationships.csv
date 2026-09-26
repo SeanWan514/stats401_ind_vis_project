@@ -1,0 +1,29 @@
+source,target,shared_scenes
+Luke Skywalker,Han Solo,38
+Luke Skywalker,Princess Leia,28
+Luke Skywalker,Darth Vader,11
+Luke Skywalker,Obi-Wan Kenobi,28
+Luke Skywalker,C-3PO,29
+Luke Skywalker,R2-D2,28
+Luke Skywalker,Chewbacca,26
+Han Solo,Princess Leia,19
+Han Solo,Darth Vader,2
+Han Solo,Obi-Wan Kenobi,13
+Han Solo,C-3PO,10
+Han Solo,R2-D2,10
+Han Solo,Chewbacca,31
+Princess Leia,Darth Vader,5
+Princess Leia,Obi-Wan Kenobi,4
+Princess Leia,C-3PO,15
+Princess Leia,R2-D2,8
+Princess Leia,Chewbacca,19
+Darth Vader,Obi-Wan Kenobi,4
+Darth Vader,C-3PO,0
+Darth Vader,R2-D2,1
+Darth Vader,Chewbacca,2
+Obi-Wan Kenobi,C-3PO,11
+Obi-Wan Kenobi,R2-D2,9
+Obi-Wan Kenobi,Chewbacca,11
+C-3PO,R2-D2,34
+C-3PO,Chewbacca,8
+R2-D2,Chewbacca,6

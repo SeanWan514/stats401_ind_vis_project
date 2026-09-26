@@ -1,0 +1,18 @@
+{
+  "source": "https://imsdb.com/scripts/Star-Wars-A-New-Hope.html",
+  "source_label": "Star Wars: A New Hope - Revised Fourth Draft (January 15, 1976)",
+  "method": "Screenplay-derived; scenes split at INT./EXT. headings; eight-character presence detected in speaker cues and action text; manually defined macro-location rules.",
+  "limitations": "The screenplay contains draft/deleted material and micro-scenes from rapid cross-cutting. Values are not finished-film screen time.",
+  "total_screenplay_scenes": 480,
+  "relevant_scenes": 300,
+  "selected_characters": [
+    "Luke Skywalker",
+    "Han Solo",
+    "Princess Leia",
+    "Darth Vader",
+    "Obi-Wan Kenobi",
+    "C-3PO",
+    "R2-D2",
+    "Chewbacca"
+  ]
+}

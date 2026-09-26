@@ -1,0 +1,237 @@
+scene_id,character,word_count
+1,C-3PO,31
+3,C-3PO,16
+4,Luke Skywalker,13
+7,C-3PO,44
+8,Darth Vader,42
+10,C-3PO,50
+12,C-3PO,17
+14,Luke Skywalker,52
+15,Luke Skywalker,15
+16,Princess Leia,47
+16,Darth Vader,125
+18,C-3PO,127
+19,C-3PO,33
+20,Luke Skywalker,269
+24,C-3PO,5
+28,C-3PO,21
+29,Luke Skywalker,66
+29,C-3PO,123
+30,Luke Skywalker,233
+30,Princess Leia,28
+30,C-3PO,374
+31,Luke Skywalker,154
+33,Luke Skywalker,8
+33,C-3PO,25
+34,Luke Skywalker,55
+34,C-3PO,39
+38,Luke Skywalker,70
+38,C-3PO,25
+41,Luke Skywalker,51
+41,C-3PO,74
+42,Luke Skywalker,25
+43,Luke Skywalker,85
+43,Obi-Wan Kenobi,128
+44,Luke Skywalker,23
+44,Obi-Wan Kenobi,6
+44,C-3PO,35
+45,Luke Skywalker,140
+45,Princess Leia,111
+45,Obi-Wan Kenobi,317
+45,C-3PO,12
+47,Darth Vader,47
+48,Luke Skywalker,67
+48,Obi-Wan Kenobi,44
+50,Luke Skywalker,6
+52,Darth Vader,14
+53,Luke Skywalker,30
+53,Obi-Wan Kenobi,27
+54,Obi-Wan Kenobi,19
+55,Luke Skywalker,5
+55,Obi-Wan Kenobi,32
+56,Luke Skywalker,38
+56,Obi-Wan Kenobi,39
+56,C-3PO,10
+57,Luke Skywalker,21
+57,Obi-Wan Kenobi,26
+57,C-3PO,6
+58,C-3PO,7
+59,Luke Skywalker,30
+59,Han Solo,157
+59,Obi-Wan Kenobi,52
+60,Luke Skywalker,10
+60,Obi-Wan Kenobi,6
+61,Han Solo,63
+63,Darth Vader,25
+64,C-3PO,39
+65,Luke Skywalker,18
+65,Obi-Wan Kenobi,17
+66,Han Solo,86
+68,Luke Skywalker,5
+68,Han Solo,43
+70,C-3PO,2
+73,Han Solo,6
+73,C-3PO,10
+77,Han Solo,34
+79,Luke Skywalker,13
+79,Han Solo,48
+81,Luke Skywalker,11
+81,Han Solo,69
+81,Obi-Wan Kenobi,11
+84,Princess Leia,68
+85,Darth Vader,3
+86,Luke Skywalker,48
+86,Han Solo,158
+86,Obi-Wan Kenobi,110
+86,C-3PO,38
+87,Darth Vader,10
+89,Luke Skywalker,20
+89,Han Solo,93
+89,Obi-Wan Kenobi,14
+91,Luke Skywalker,16
+91,Han Solo,13
+91,Obi-Wan Kenobi,14
+93,Luke Skywalker,12
+93,Han Solo,14
+93,Obi-Wan Kenobi,13
+95,Luke Skywalker,32
+95,Han Solo,74
+95,Obi-Wan Kenobi,16
+101,Darth Vader,21
+102,Darth Vader,28
+103,Luke Skywalker,7
+103,Han Solo,41
+103,Obi-Wan Kenobi,16
+105,Luke Skywalker,194
+105,Han Solo,152
+105,Obi-Wan Kenobi,65
+105,C-3PO,116
+106,Luke Skywalker,8
+108,Luke Skywalker,6
+108,Han Solo,11
+109,Luke Skywalker,13
+109,Han Solo,104
+110,Luke Skywalker,29
+110,Princess Leia,19
+111,Darth Vader,47
+112,Luke Skywalker,22
+112,Han Solo,23
+112,Princess Leia,11
+112,C-3PO,4
+113,C-3PO,33
+114,Luke Skywalker,9
+114,Han Solo,59
+114,Princess Leia,29
+115,Luke Skywalker,66
+115,Han Solo,76
+115,Princess Leia,37
+116,C-3PO,43
+117,Luke Skywalker,15
+117,Han Solo,4
+117,Princess Leia,2
+118,C-3PO,15
+119,Han Solo,19
+119,Princess Leia,2
+120,C-3PO,23
+122,C-3PO,4
+123,Luke Skywalker,1
+124,Luke Skywalker,24
+124,C-3PO,4
+125,Luke Skywalker,10
+126,Luke Skywalker,18
+126,C-3PO,29
+127,Luke Skywalker,19
+128,Han Solo,3
+130,Luke Skywalker,4
+130,Han Solo,55
+130,Princess Leia,47
+132,Luke Skywalker,29
+132,Han Solo,19
+132,Princess Leia,14
+132,C-3PO,14
+136,Luke Skywalker,25
+136,Princess Leia,24
+138,C-3PO,4
+140,Darth Vader,36
+140,Obi-Wan Kenobi,25
+141,Luke Skywalker,5
+141,Han Solo,29
+141,Princess Leia,6
+142,Luke Skywalker,1
+143,C-3PO,5
+144,Luke Skywalker,1
+144,Han Solo,12
+144,Princess Leia,6
+145,Han Solo,25
+148,Han Solo,23
+149,Luke Skywalker,5
+149,Han Solo,11
+149,Princess Leia,7
+153,Han Solo,8
+157,Princess Leia,5
+164,Luke Skywalker,5
+169,C-3PO,1
+170,Han Solo,13
+170,Princess Leia,4
+180,Luke Skywalker,5
+180,Han Solo,5
+182,Princess Leia,9
+188,Luke Skywalker,6
+188,Princess Leia,3
+189,C-3PO,12
+191,Darth Vader,8
+192,Luke Skywalker,15
+192,Han Solo,91
+192,Princess Leia,91
+197,Princess Leia,48
+201,Luke Skywalker,22
+203,Darth Vader,24
+204,Luke Skywalker,62
+204,Han Solo,91
+205,Luke Skywalker,69
+205,Princess Leia,16
+205,C-3PO,19
+215,Luke Skywalker,4
+237,Luke Skywalker,7
+242,Luke Skywalker,8
+244,Darth Vader,14
+247,Luke Skywalker,9
+256,Luke Skywalker,7
+264,Luke Skywalker,6
+267,Luke Skywalker,2
+268,Darth Vader,12
+274,Luke Skywalker,5
+278,Luke Skywalker,4
+284,Luke Skywalker,6
+287,Luke Skywalker,2
+293,Darth Vader,4
+309,Darth Vader,6
+347,Luke Skywalker,5
+348,Luke Skywalker,7
+353,Darth Vader,3
+373,Luke Skywalker,11
+374,Luke Skywalker,5
+382,Luke Skywalker,16
+386,Luke Skywalker,8
+391,Luke Skywalker,6
+393,Luke Skywalker,10
+395,Luke Skywalker,16
+402,Luke Skywalker,5
+403,Luke Skywalker,8
+406,Darth Vader,7
+410,Luke Skywalker,6
+424,Darth Vader,4
+426,C-3PO,3
+436,Darth Vader,7
+439,Luke Skywalker,6
+447,Luke Skywalker,3
+454,Darth Vader,4
+457,Darth Vader,1
+459,Han Solo,2
+466,Han Solo,6
+467,Han Solo,10
+475,Han Solo,9
+479,Luke Skywalker,16
+479,Han Solo,18
+479,Princess Leia,14
+479,C-3PO,35

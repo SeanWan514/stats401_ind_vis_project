@@ -1,0 +1,301 @@
+scene_id,scene_order,heading,macro_location,characters,character_count,dialogue_words
+1,1,INT. REBEL BLOCKADE RUNNER - MAIN PASSAGEWAY,Outer Space / Spacecraft,C-3PO|R2-D2,2,31
+3,3,INT. REBEL BLOCKADE RUNNER,Outer Space / Spacecraft,C-3PO|R2-D2,2,16
+4,4,EXT. TATOOINE - DESERT WASTELAND - DAY,Tatooine,Luke Skywalker,1,13
+5,5,INT. REBEL BLOCKADE RUNNER - MAIN HALLWAY,Outer Space / Spacecraft,Darth Vader,1,0
+6,6,INT. REBEL BLOCKADE RUNNER,Outer Space / Spacecraft,R2-D2,1,0
+7,7,INT. REBEL BLOCKADE RUNNER,Outer Space / Spacecraft,C-3PO|R2-D2,2,44
+8,8,INT. REBEL BLOCKADE RUNNER - CORRIDOR,Outer Space / Spacecraft,Darth Vader,1,42
+9,9,INT. REBEL BLOCKADE RUNNER - SUBHALLWAY,Outer Space / Spacecraft,Princess Leia,1,0
+10,10,INT. REBEL BLOCKADE RUNNER - SUBHALLWAY,Outer Space / Spacecraft,C-3PO|R2-D2,2,50
+12,12,INT. LIFEPOD,Outer Space / Spacecraft,C-3PO|R2-D2,2,17
+13,13,EXT. TATOOINE - ANCHORHEAD SETTLEMENT - POWER STATION - DAY,Tatooine,Luke Skywalker,1,0
+14,14,INT. POWER STATION - DAY,Tatooine,Luke Skywalker,1,52
+15,15,EXT. TATOOINE - ANCHORHEAD - SETTLEMENT - POWER STATION -,Tatooine,Luke Skywalker,1,15
+16,16,INT. REBEL BLOCKADE RUNNER - HALLWAY,Outer Space / Spacecraft,Princess Leia|Darth Vader,2,172
+18,18,EXT. TATOOINE - DESERT,Tatooine,C-3PO|R2-D2,2,127
+19,19,EXT. TATOOINE - DUNE SEA,Tatooine,C-3PO,1,33
+20,20,EXT. TATOOINE - ANCHORHEAD SETTLEMENT - POWER STATION - DAY,Tatooine,Luke Skywalker,1,269
+21,21,EXT. TATOOINE - ROCK CANYON - SUNSET,Tatooine,R2-D2,1,0
+22,22,EXT. TATOOINE - ROCK CANYON - SANDCRAWLER - SUNSET,Tatooine,R2-D2,1,0
+23,23,INT. SANDCRAWLER - HOLD AREA,Tatooine,R2-D2,1,0
+24,24,INT. SANDCRAWLER - PRISON AREA,Tatooine,C-3PO|R2-D2,2,5
+26,26,EXT. TATOOINE - DESERT - DAY,Tatooine,C-3PO|R2-D2,2,0
+28,28,INT. SANDCRAWLER,Tatooine,C-3PO|R2-D2,2,21
+29,29,EXT. TATOOINE - DESERT - LARS HOMESTEAD - AFTERNOON,Tatooine,Luke Skywalker|C-3PO|R2-D2,3,189
+30,30,INT. LARS HOMESTEAD - GARAGE AREA - LATE AFTERNOON,Tatooine,Luke Skywalker|Princess Leia|C-3PO|R2-D2,4,635
+31,31,INT. LARS HOMESTEAD - DINING AREA,Tatooine,Luke Skywalker,1,154
+32,32,EXT. TATOOINE - LARS HOMESTEAD,Tatooine,Luke Skywalker,1,0
+33,33,INT. LARS HOMESTEAD - GARAGE,Tatooine,Luke Skywalker|C-3PO|R2-D2,3,33
+34,34,EXT. TATOOINE - LARS HOMESTEAD,Tatooine,Luke Skywalker|C-3PO,2,94
+37,37,EXT. TATOOINE - DESERT WASTELAND - LUKE'S SPEEDER - DAY,Tatooine,Luke Skywalker|C-3PO,2,0
+38,38,INT./EXT. LUKE'S SPEEDER - DESERT WASTELAND - TRAVELING -,Tatooine,Luke Skywalker|C-3PO,2,95
+41,41,EXT. TATOOINE - ROCK CANYON - FLOOR,Tatooine,Luke Skywalker|C-3PO|R2-D2,3,125
+42,42,EXT. TATOOINE - ROCK CANYON - RIDGE - DAY,Tatooine,Luke Skywalker|C-3PO,2,25
+43,43,EXT. TATOOINE - ROCK CANYON - FLOOR - DAY,Tatooine,Luke Skywalker|Obi-Wan Kenobi|R2-D2,3,213
+44,44,EXT. TATOOINE - SAND PIT - ROCK MESA - DAY,Tatooine,Luke Skywalker|Obi-Wan Kenobi|C-3PO|R2-D2,4,64
+45,45,INT. KENOBI'S DWELLING,Tatooine,Luke Skywalker|Princess Leia|Obi-Wan Kenobi|C-3PO|R2-D2,5,580
+47,47,INT. DEATH STAR - CONFERENCE ROOM,Death Star,Darth Vader,1,47
+48,48,EXT. TATOOINE - WASTELAND,Tatooine,Luke Skywalker|Obi-Wan Kenobi|C-3PO|R2-D2,4,111
+49,49,EXT. TATOOINE - WASTELAND,Tatooine,Luke Skywalker,1,0
+50,50,EXT. TATOOINE - LARS HOMESTEAD,Tatooine,Luke Skywalker,1,6
+52,52,INT. DEATH STAR - DETENTION CORRIDOR,Death Star,Princess Leia|Darth Vader,2,14
+53,53,EXT. TATOOINE - WASTELAND,Tatooine,Luke Skywalker|Obi-Wan Kenobi,2,57
+54,54,EXT. TATOOINE - WASTELAND,Tatooine,Luke Skywalker|Obi-Wan Kenobi|C-3PO|R2-D2,4,19
+55,55,EXT. TATOOINE - MOS EISLEY - STREET,Tatooine,Luke Skywalker|Obi-Wan Kenobi,2,37
+56,56,EXT. TATOOINE - MOS EISLEY - STREET,Tatooine,Luke Skywalker|Obi-Wan Kenobi|C-3PO,3,87
+57,57,INT. TATOOINE - MOS EISLEY - CANTINA,Tatooine,Luke Skywalker|Obi-Wan Kenobi|C-3PO|Chewbacca,4,53
+58,58,EXT. TATOOINE - MOS EISLEY - STREET,Tatooine,C-3PO|R2-D2,2,7
+59,59,INT. TATOOINE - MOS EISLEY - CANTINA,Tatooine,Luke Skywalker|Han Solo|Obi-Wan Kenobi|Chewbacca,4,239
+60,60,EXT. TATOOINE - MOS EISLEY - STREET,Tatooine,Luke Skywalker|Obi-Wan Kenobi,2,16
+61,61,INT. MOS EISLEY - CANTINA,Tatooine,Han Solo,1,63
+63,63,INT. DEATH STAR - CONTROL ROOM,Death Star,Darth Vader,1,25
+64,64,EXT. TATOOINE - MOS EISLEY - STREET,Tatooine,C-3PO|R2-D2,2,39
+65,65,EXT. TATOOINE - MOS EISLEY - STREET - ALLEYWAY - USED,Tatooine,Luke Skywalker|Obi-Wan Kenobi,2,35
+66,66,INT. DOCKING BAY 94 - DAY,Tatooine,Han Solo|Chewbacca,2,86
+67,67,EXT. DOCKING PORT ENTRY - ALLEYWAY,Tatooine,Luke Skywalker|Obi-Wan Kenobi|Chewbacca,3,0
+68,68,INT. MOS EISLEY SPACEPORT - DOCKING BAY 94,Tatooine,Luke Skywalker|Han Solo|Chewbacca,3,48
+69,69,INT. MILLENNIUM FALCON,Outer Space / Spacecraft,Chewbacca,1,0
+70,70,INT. MOS EISLEY SPACEPORT - DOCKING BAY 94,Tatooine,Luke Skywalker|Han Solo|Obi-Wan Kenobi|C-3PO|R2-D2,5,2
+72,72,INT. MOS EISLEY SPACEPORT - DOCKING BAY 94,Tatooine,Han Solo,1,0
+73,73,INT. MILLENNIUM FALCON,Outer Space / Spacecraft,Han Solo|C-3PO,2,16
+75,75,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Han Solo|Chewbacca,2,0
+77,77,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Han Solo|R2-D2,2,34
+79,79,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Obi-Wan Kenobi|Chewbacca,4,61
+81,81,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Obi-Wan Kenobi,3,91
+84,84,INT. DEATH STAR - CONTROL ROOM,Death Star,Princess Leia|Darth Vader,2,68
+85,85,INT. DEATH STAR - BLAST CHAMBER,Death Star,Darth Vader,1,3
+86,86,INT. MILLENNIUM FALCON - CENTRAL HOLD AREA,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Obi-Wan Kenobi|C-3PO|R2-D2|Chewbacca,6,354
+87,87,INT. DEATH STAR - CONFERENCE ROOM,Death Star,Darth Vader,1,10
+89,89,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Obi-Wan Kenobi|Chewbacca,4,127
+91,91,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Obi-Wan Kenobi,3,43
+93,93,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Obi-Wan Kenobi|Chewbacca,4,39
+95,95,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Obi-Wan Kenobi,3,122
+101,101,INT. DEATH STAR - CONFERENCE ROOM,Death Star,Darth Vader,1,21
+102,102,INT. DEATH STAR - DOCKING BAY 2037,Death Star,Darth Vader,1,28
+103,103,INT. MILLENNIUM FALCON - HALLWAY,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Obi-Wan Kenobi|Chewbacca,4,64
+105,105,INT. DEATH STAR - FORWARD BAY - COMMAND OFFICE,Death Star,Luke Skywalker|Han Solo|Obi-Wan Kenobi|C-3PO|R2-D2|Chewbacca,6,527
+106,106,INT. DEATH STAR - DETENTION AREA - ELEVATOR TUBE,Death Star,Luke Skywalker|Han Solo,2,8
+107,107,INT. DEATH STAR - MAIN HALLWAY,Death Star,Obi-Wan Kenobi|C-3PO,2,0
+108,108,INT. DEATH STAR - INTERIOR ELEVATOR - DETENTION SECURITY,Death Star,Luke Skywalker|Han Solo,2,17
+109,109,INT. DETENTION AREA,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Chewbacca,3,117
+110,110,INT. DEATH STAR - CELL ROW,Death Star,Luke Skywalker|Princess Leia,2,48
+111,111,INT. DEATH STAR - CONFERENCE ROOM,Death Star,Darth Vader,1,47
+112,112,INT. DEATH STAR - DETENTION AREA - HALLWAY,Death Star,Luke Skywalker|Han Solo|Princess Leia|C-3PO|Chewbacca,5,60
+113,113,INT. DEATH STAR - MAIN BAY GANTRY - CONTROL TOWER,Death Star,C-3PO|R2-D2,2,33
+114,114,INT. DEATH STAR - DETENTION CORRIDOR,Death Star,Luke Skywalker|Han Solo|Princess Leia|Chewbacca,4,97
+115,115,INT. DEATH STAR - GARBAGE ROOM,Death Star,Luke Skywalker|Han Solo|Princess Leia|Chewbacca,4,179
+116,116,INT. DEATH STAR - MAIN GANTRY - COMMAND OFFICE,Death Star,Luke Skywalker|C-3PO|R2-D2,3,43
+117,117,INT. DEATH STAR - GARBAGE ROOM,Death Star,Luke Skywalker|Han Solo|Princess Leia|C-3PO|Chewbacca,5,21
+118,118,INT. DEATH STAR - MAIN FORWARD BAY - SERVICE PANEL,Death Star,C-3PO|R2-D2,2,15
+119,119,INT. DEATH STAR - GARBAGE ROOM,Death Star,Han Solo|Princess Leia,2,21
+120,120,INT. DEATH STAR - MAIN FORWARD BAY - SERVICE PANEL,Death Star,C-3PO|R2-D2,2,23
+121,121,INT. DEATH STAR - GARBAGE ROOM,Death Star,Luke Skywalker,1,0
+122,122,INT. DEATH STAR - MAIN FORWARD BAY - SERVICE PANEL,Death Star,Luke Skywalker|C-3PO,2,4
+123,123,INT. DEATH STAR - GARBAGE ROOM,Death Star,Luke Skywalker,1,1
+124,124,INT. DEATH STAR - MAIN FORWARD BAY - SERVICE PANEL,Death Star,Luke Skywalker|C-3PO,2,28
+125,125,INT. DEATH STAR - GARBAGE ROOM,Death Star,Luke Skywalker,1,10
+126,126,INT. DEATH STAR - MAIN FORWARD BAY - SERVICE PANEL,Death Star,Luke Skywalker|C-3PO,2,47
+127,127,INT. DEATH STAR - GARBAGE ROOM,Death Star,Luke Skywalker|Han Solo|Princess Leia|Chewbacca,4,19
+128,128,INT. DEATH STAR - MAIN FORWARD BAY - SERVICE PANEL,Death Star,Han Solo,1,3
+129,129,INT. DEATH STAR - TRACTOR BEAM - POWER GENERATOR TRENCH,Death Star,Obi-Wan Kenobi,1,0
+130,130,INT. DEATH STAR - UNUSED HALLWAY,Death Star,Luke Skywalker|Han Solo|Princess Leia|Chewbacca,4,106
+131,131,INT. DEATH STAR - POWER TRENCH,Death Star,Obi-Wan Kenobi,1,0
+132,132,INT. DEATH STAR - HALLWAY,Death Star,Luke Skywalker|Han Solo|Princess Leia|C-3PO|Chewbacca,5,76
+133,133,INT. DEATH STAR - SUBHALLWAY,Death Star,Han Solo,1,0
+134,134,INT. DEATH STAR - SUBHALLWAY,Death Star,Han Solo|Chewbacca,2,0
+135,135,INT. DEATH STAR - SUBHALLWAY,Death Star,Luke Skywalker|Princess Leia,2,0
+136,136,INT. DEATH STAR - CENTRAL CORE SHAFT,Death Star,Luke Skywalker|Princess Leia,2,49
+137,137,INT. DEATH STAR - NARROW PASSAGEWAY,Death Star,Darth Vader|Obi-Wan Kenobi,2,0
+138,138,INT. DEATH STAR - MAIN FORWARD BAY,Death Star,C-3PO|R2-D2,2,4
+139,139,INT. DEATH STAR - CORRIDOR - BLAST SHIELDS DOOR,Death Star,Han Solo|Chewbacca,2,0
+140,140,INT. DEATH STAR - HALLWAY LEADING TO MAIN FORWARD BAY,Death Star,Darth Vader|Obi-Wan Kenobi,2,61
+141,141,INT. DEATH STAR - MAIN FORWARD BAY,Death Star,Luke Skywalker|Han Solo|Princess Leia|Chewbacca,4,40
+142,142,INT. DEATH STAR - HALLWAY,Death Star,Luke Skywalker|Han Solo|Princess Leia|Darth Vader|Obi-Wan Kenobi|Chewbacca,6,1
+143,143,INT. DEATH STAR - DOCKING BAY,Death Star,Obi-Wan Kenobi|C-3PO|R2-D2,3,5
+144,144,INT. DEATH STAR - HALLWAY,Death Star,Luke Skywalker|Han Solo|Princess Leia|Darth Vader|Obi-Wan Kenobi|Chewbacca,6,19
+145,145,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Han Solo|Chewbacca,2,25
+147,147,INT. MILLENNIUM FALCON - CENTRAL HOLD AREA,Outer Space / Spacecraft,Luke Skywalker|Princess Leia|Obi-Wan Kenobi,3,0
+148,148,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Han Solo,1,23
+149,149,INT. MILLENNIUM FALCON - CENTRAL HOLD AREA,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Princess Leia|R2-D2,4,23
+150,150,INT. MILLENNIUM FALCON - GUNPORTS - COCKPIT,Outer Space / Spacecraft,Han Solo,1,0
+151,151,INT. MILLENNIUM FALCON - HOLD AREA,Outer Space / Spacecraft,Luke Skywalker|Princess Leia,2,0
+152,152,INT. MILLENNIUM FALCON - GUNPORTS - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+153,153,INT. MILLENNIUM FALCON - SOLO'S GUNPORT,Outer Space / Spacecraft,Han Solo,1,8
+154,154,INT. MILLENNIUM FALCON - GUNPORTS - COCKPIT,Outer Space / Spacecraft,Princess Leia|Chewbacca,2,0
+155,155,INT. MILLENNIUM FALCON - SOLO'S GUNPORT - COCKPIT,Outer Space / Spacecraft,Han Solo,1,0
+156,156,INT. MILLENNIUM FALCON - GUNPORT - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+157,157,INT. MILLENNIUM FALCON - COCKPIT.,Outer Space / Spacecraft,Princess Leia|Chewbacca,2,5
+161,161,INT. MILLENNIUM FALCON - HOLD AREA,Outer Space / Spacecraft,C-3PO|R2-D2,2,0
+162,162,INT. MILLENNIUM FALCON - COCKPIT - GUNPORTS,Outer Space / Spacecraft,Luke Skywalker|Han Solo,2,0
+164,164,INT. MILLENNIUM FALCON - GUNPORTS,Outer Space / Spacecraft,Luke Skywalker,1,5
+166,166,INT. MILLENNIUM FALCON - CHEWBACCA,Outer Space / Spacecraft,Princess Leia|Chewbacca,2,0
+169,169,INT. MILLENNIUM FALCON - MAIN PASSAGEWAY,Outer Space / Spacecraft,C-3PO,1,1
+170,170,INT. MILLENNIUM FALCON - COCKPIT - GUNPORTS,Outer Space / Spacecraft,Han Solo|Princess Leia|R2-D2|Chewbacca,4,17
+171,171,INT. MILLENNIUM FALCON - GUNPORT,Outer Space / Spacecraft,Luke Skywalker,1,0
+172,172,INT. MILLENNIUM FALCON - GUNPORT,Outer Space / Spacecraft,Han Solo,1,0
+174,174,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Princess Leia,1,0
+176,176,INT. MILLENNIUM FALCON - GUNPORTS,Outer Space / Spacecraft,Luke Skywalker,1,0
+178,178,INT. MILLENNIUM FALCON - GUNPORTS,Outer Space / Spacecraft,Luke Skywalker|Han Solo,2,0
+180,180,INT. MILLENNIUM FALCON - GUNPORTS,Outer Space / Spacecraft,Luke Skywalker|Han Solo,2,10
+182,182,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Princess Leia|Chewbacca,2,9
+184,184,INT. MILLENNIUM FALCON - GUNPORTS,Outer Space / Spacecraft,Luke Skywalker|Han Solo,2,0
+186,186,INT. MILLENNIUM FALCON - GUNPORTS,Outer Space / Spacecraft,Luke Skywalker,1,0
+188,188,INT. MILLENNIUM FALCON - GUNPORT,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Princess Leia|Chewbacca,4,9
+189,189,INT. MILLENNIUM FALCON - PASSAGEWAY,Outer Space / Spacecraft,C-3PO|R2-D2,2,12
+191,191,INT. DEATH STAR - CONTROL ROOM,Death Star,Darth Vader,1,8
+192,192,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Han Solo|Princess Leia|Chewbacca,4,197
+196,196,EXT. MASSASSI OUTPOST - JUNGLE TEMPLE,Yavin IV,Luke Skywalker|Han Solo,2,0
+197,197,INT. MASSASSI - MAIN HANGAR DECK,Yavin IV,Princess Leia,1,48
+199,199,INT. DEATH STAR - CONTROL ROOM,Death Star,Darth Vader,1,0
+201,201,INT. MASSASSI - WAR ROOM BRIEFING AREA,Yavin IV,Luke Skywalker|Han Solo|Princess Leia|R2-D2|Chewbacca,5,22
+203,203,INT. DEATH STAR,Death Star,Darth Vader,1,24
+204,204,INT. MASSASSI OUTPOST - MAIN HANGAR DECK,Yavin IV,Luke Skywalker|Han Solo|C-3PO|R2-D2|Chewbacca,5,153
+205,205,INT. MAIN HANGAR DECK - LUKE'S SHIP,Outer Space / Spacecraft,Luke Skywalker|Princess Leia|C-3PO|R2-D2,4,104
+207,207,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,C-3PO,1,0
+215,215,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,4
+216,216,EXT. LUKE'S X-WING FIGHTER,Outer Space / Spacecraft,Luke Skywalker|R2-D2,2,0
+221,221,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+232,232,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Princess Leia|C-3PO,2,0
+237,237,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,7
+238,238,EXT. SPACE,Outer Space / Spacecraft,Luke Skywalker,1,0
+239,239,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+240,240,EXT. SURFACE OF DEATH STAR,Death Star,Luke Skywalker,1,0
+242,242,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,8
+244,244,INT. DEATH STAR,Death Star,Darth Vader,1,14
+247,247,INT. LUKE'S X-WING - COCKPIT - TRAVELING,Outer Space / Spacecraft,Luke Skywalker,1,9
+248,248,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker,1,0
+249,249,EXT. LUKE'S X-WING TRAVELING,Outer Space / Spacecraft,Luke Skywalker,1,0
+250,250,INT. LUKE'S X-WING - COCKPIT - TRAVELING,Outer Space / Spacecraft,Luke Skywalker,1,0
+251,251,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker,1,0
+255,255,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Princess Leia,1,0
+256,256,INT. LUKE'S X-WING - COCKPIT - TRAVELING,Outer Space / Spacecraft,Luke Skywalker,1,7
+264,264,INT. X-WING FIGHTER - COCKPIT - TRAVELING,Outer Space / Spacecraft,Luke Skywalker,1,6
+265,265,EXT. SPACE AROUND THE DEATH STAR,Death Star,Luke Skywalker,1,0
+266,266,EXT. SURFACE AROUND THE DEATH STAR,Death Star,Luke Skywalker,1,0
+267,267,INT. LUKE'S X-WING FIGHTER - COCKPIT - TRAVELING,Outer Space / Spacecraft,Luke Skywalker,1,2
+268,268,INT. DEATH STAR,Death Star,Darth Vader,1,12
+269,269,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Princess Leia|C-3PO,2,0
+270,270,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+271,271,EXT. SPACE,Outer Space / Spacecraft,Luke Skywalker,1,0
+272,272,INT. TIE FIGHTER'S COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+273,273,EXT. SPACE,Outer Space / Spacecraft,Luke Skywalker,1,0
+274,274,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,5
+275,275,EXT. LUKE'S X-WING FIGHTER,Outer Space / Spacecraft,Luke Skywalker|R2-D2,2,0
+276,276,INT. LUKE'S X-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+277,277,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Luke Skywalker|Princess Leia,2,0
+278,278,INT. LUKE'S X-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,4
+279,279,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker,1,0
+281,281,INT. LUKE'S X-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+282,282,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker,1,0
+284,284,INT. LUKE'S X-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,6
+286,286,EXT. SPACE,Outer Space / Spacecraft,Luke Skywalker,1,0
+287,287,INT. LUKE'S X-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,2
+288,288,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Princess Leia|C-3PO,2,0
+291,291,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Princess Leia,1,0
+293,293,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,4
+302,302,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Princess Leia|C-3PO,2,0
+305,305,INT. GOLD TWO'S Y-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+308,308,EXT. SPACE AROUND THE DEATH STAR,Death Star,Darth Vader,1,0
+309,309,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,6
+311,311,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+321,321,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+322,322,INT. GOLD LEADER'S Y-WING - COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+325,325,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+329,329,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+334,334,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+335,335,EXT. SPACE AROUND THE DEATH STAR,Death Star,Luke Skywalker,1,0
+336,336,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+347,347,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,5
+348,348,INT. RED TEN'S COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,7
+349,349,EXT. SURFACE OF THE DEATH STAR,Death Star,Darth Vader,1,0
+353,353,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,3
+356,356,EXT. SURFACE OF THE DEATH STAR,Death Star,Darth Vader,1,0
+357,357,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+358,358,EXT. SPACE,Outer Space / Spacecraft,Darth Vader,1,0
+359,359,INT. RED TEN'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+362,362,EXT. SURFACE OF THE DEATH STAR,Death Star,Darth Vader,1,0
+363,363,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+364,364,INT. RED TEN'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+369,369,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Princess Leia,1,0
+371,371,EXT. SPACE AROUND THE DEATH STAR - TIE FIGHTER,Death Star,Darth Vader,1,0
+372,372,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+373,373,INT. RED LEADER'S COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,11
+374,374,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,5
+376,376,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+377,377,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+379,379,EXT. SPACE AROUND THE DEATH STAR,Death Star,Darth Vader,1,0
+380,380,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+382,382,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Luke Skywalker|Princess Leia|C-3PO,3,16
+386,386,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,8
+388,388,INT. BIGGS' COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+389,389,INT. LUKE'S COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+391,391,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,6
+393,393,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,10
+394,394,EXT. DEATH STAR SURFACE,Death Star,Luke Skywalker,1,0
+395,395,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,16
+396,396,EXT. LUKE'S X-WING FIGHTER,Outer Space / Spacecraft,Luke Skywalker|R2-D2,2,0
+399,399,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+400,400,EXT. SPACE AROUND THE DEATH STAR,Death Star,Darth Vader,1,0
+401,401,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+402,402,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Luke Skywalker|Princess Leia,2,5
+403,403,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,8
+406,406,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,7
+407,407,EXT. SPACE AROUND THE DEATH STAR,Death Star,Luke Skywalker,1,0
+409,409,EXT. SPACE AROUND THE DEATH STAR,Death Star,Luke Skywalker,1,0
+410,410,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|R2-D2,2,6
+411,411,EXT. LUKE'S X-WING FIGHTER,Outer Space / Spacecraft,Luke Skywalker|R2-D2,2,0
+413,413,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+415,415,INT. LUKE'S X-WING FIGHTER,Outer Space / Spacecraft,Luke Skywalker,1,0
+416,416,EXT. SPACE AROUND THE DEATH STAR,Death Star,Luke Skywalker|Darth Vader,2,0
+418,418,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+421,421,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Princess Leia,1,0
+422,422,INT. LUKE'S X-WING COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+424,424,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Darth Vader,2,4
+425,425,EXT. SURFACE OF THE DEATH STAR - LUKE'S SHIP,Death Star,Luke Skywalker,1,0
+426,426,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Princess Leia|C-3PO,2,3
+427,427,INT. LUKE'S X-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+428,428,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker,1,0
+429,429,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+430,430,INT. LUKE'S X-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+431,431,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker,1,0
+432,432,INT. LUKE'S X-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+434,434,INT. LUKE'S X-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Obi-Wan Kenobi,2,0
+435,435,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker,1,0
+436,436,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,7
+437,437,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker|Darth Vader,2,0
+438,438,INT. LUKE'S X-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Obi-Wan Kenobi,2,0
+439,439,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Luke Skywalker|Princess Leia,2,6
+440,440,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker,1,0
+441,441,INT. LUKE'S X-WING - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+442,442,EXT. LUKE'S X-WING FIGHTER,Outer Space / Spacecraft,Luke Skywalker|R2-D2,2,0
+443,443,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker|Darth Vader,2,0
+444,444,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Darth Vader,2,0
+445,445,EXT. LUKE'S X-WING FIGHTER,Outer Space / Spacecraft,Luke Skywalker|Darth Vader|R2-D2,3,0
+446,446,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|R2-D2,2,0
+447,447,EXT. LUKE'S X-WING FIGHTER,Outer Space / Spacecraft,Luke Skywalker|R2-D2,2,3
+448,448,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Princess Leia|C-3PO,2,0
+450,450,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker,1,0
+451,451,INT. LUKE'S COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+452,452,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+453,453,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker,1,0
+454,454,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Darth Vader,2,4
+455,455,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker|Darth Vader,2,0
+456,456,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Darth Vader,2,0
+457,457,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,1
+458,458,INT. DARTH VADER'S WINGMAN - COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+459,459,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Han Solo|Chewbacca,2,2
+462,462,EXT. DEATH STAR TRENCH,Death Star,Darth Vader,1,0
+463,463,EXT. SPACE AROUND THE DEATH STAR,Death Star,Darth Vader,1,0
+464,464,INT. DARTH VADER'S COCKPIT,Outer Space / Spacecraft,Darth Vader,1,0
+465,465,EXT. SURFACE OF THE DEATH STAR,Death Star,Han Solo,1,0
+466,466,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Luke Skywalker|Han Solo,2,6
+467,467,INT. MASSASSI OUTPOST - WAR ROOM,Yavin IV,Han Solo|Princess Leia,2,10
+468,468,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+469,469,EXT. SURFACE OF THE DEATH STAR,Death Star,Luke Skywalker,1,0
+470,470,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+475,475,INT. MILLENNIUM FALCON - COCKPIT,Outer Space / Spacecraft,Han Solo,1,9
+476,476,INT. LUKE'S X-WING FIGHTER - COCKPIT,Outer Space / Spacecraft,Luke Skywalker,1,0
+477,477,EXT. DARTH VADER'S TIE FIGHTER,Outer Space / Spacecraft,Darth Vader,1,0
+479,479,INT. MASSASSI OUTPOST - MAIN HANGAR,Yavin IV,Luke Skywalker|Han Solo|Princess Leia|C-3PO|R2-D2,5,83
+480,480,INT. MASSASSI OUTPOST - MAIN THRONE ROOM,Yavin IV,Luke Skywalker|Han Solo|Princess Leia|C-3PO|R2-D2|Chewbacca,6,0

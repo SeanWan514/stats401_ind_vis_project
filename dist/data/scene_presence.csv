@@ -1,0 +1,537 @@
+scene_id,character,speaks
+1,C-3PO,true
+1,R2-D2,false
+3,C-3PO,true
+3,R2-D2,false
+4,Luke Skywalker,true
+5,Darth Vader,false
+6,R2-D2,false
+7,C-3PO,true
+7,R2-D2,false
+8,Darth Vader,true
+9,Princess Leia,false
+10,C-3PO,true
+10,R2-D2,false
+12,C-3PO,true
+12,R2-D2,false
+13,Luke Skywalker,false
+14,Luke Skywalker,true
+15,Luke Skywalker,true
+16,Princess Leia,true
+16,Darth Vader,true
+18,C-3PO,true
+18,R2-D2,false
+19,C-3PO,true
+20,Luke Skywalker,true
+21,R2-D2,false
+22,R2-D2,false
+23,R2-D2,false
+24,C-3PO,true
+24,R2-D2,false
+26,C-3PO,false
+26,R2-D2,false
+28,C-3PO,true
+28,R2-D2,false
+29,Luke Skywalker,true
+29,C-3PO,true
+29,R2-D2,false
+30,Luke Skywalker,true
+30,Princess Leia,true
+30,C-3PO,true
+30,R2-D2,false
+31,Luke Skywalker,true
+32,Luke Skywalker,false
+33,Luke Skywalker,true
+33,C-3PO,true
+33,R2-D2,false
+34,Luke Skywalker,true
+34,C-3PO,true
+37,Luke Skywalker,false
+37,C-3PO,false
+38,Luke Skywalker,true
+38,C-3PO,true
+41,Luke Skywalker,true
+41,C-3PO,true
+41,R2-D2,false
+42,Luke Skywalker,true
+42,C-3PO,false
+43,Luke Skywalker,true
+43,Obi-Wan Kenobi,true
+43,R2-D2,false
+44,Luke Skywalker,true
+44,Obi-Wan Kenobi,true
+44,C-3PO,true
+44,R2-D2,false
+45,Luke Skywalker,true
+45,Princess Leia,true
+45,Obi-Wan Kenobi,true
+45,C-3PO,true
+45,R2-D2,false
+47,Darth Vader,true
+48,Luke Skywalker,true
+48,Obi-Wan Kenobi,true
+48,C-3PO,false
+48,R2-D2,false
+49,Luke Skywalker,false
+50,Luke Skywalker,true
+52,Princess Leia,false
+52,Darth Vader,true
+53,Luke Skywalker,true
+53,Obi-Wan Kenobi,true
+54,Luke Skywalker,false
+54,Obi-Wan Kenobi,true
+54,C-3PO,false
+54,R2-D2,false
+55,Luke Skywalker,true
+55,Obi-Wan Kenobi,true
+56,Luke Skywalker,true
+56,Obi-Wan Kenobi,true
+56,C-3PO,true
+57,Luke Skywalker,true
+57,Obi-Wan Kenobi,true
+57,C-3PO,true
+57,Chewbacca,false
+58,C-3PO,true
+58,R2-D2,false
+59,Luke Skywalker,true
+59,Han Solo,true
+59,Obi-Wan Kenobi,true
+59,Chewbacca,false
+60,Luke Skywalker,true
+60,Obi-Wan Kenobi,true
+61,Han Solo,true
+63,Darth Vader,true
+64,C-3PO,true
+64,R2-D2,false
+65,Luke Skywalker,true
+65,Obi-Wan Kenobi,true
+66,Han Solo,true
+66,Chewbacca,false
+67,Luke Skywalker,false
+67,Obi-Wan Kenobi,false
+67,Chewbacca,false
+68,Luke Skywalker,true
+68,Han Solo,true
+68,Chewbacca,false
+69,Chewbacca,false
+70,Luke Skywalker,false
+70,Han Solo,false
+70,Obi-Wan Kenobi,false
+70,C-3PO,true
+70,R2-D2,false
+72,Han Solo,false
+73,Han Solo,true
+73,C-3PO,true
+75,Han Solo,false
+75,Chewbacca,false
+77,Han Solo,true
+77,R2-D2,false
+79,Luke Skywalker,true
+79,Han Solo,true
+79,Obi-Wan Kenobi,false
+79,Chewbacca,false
+81,Luke Skywalker,true
+81,Han Solo,true
+81,Obi-Wan Kenobi,true
+84,Princess Leia,true
+84,Darth Vader,false
+85,Darth Vader,true
+86,Luke Skywalker,true
+86,Han Solo,true
+86,Obi-Wan Kenobi,true
+86,C-3PO,true
+86,R2-D2,false
+86,Chewbacca,false
+87,Darth Vader,true
+89,Luke Skywalker,true
+89,Han Solo,true
+89,Obi-Wan Kenobi,true
+89,Chewbacca,false
+91,Luke Skywalker,true
+91,Han Solo,true
+91,Obi-Wan Kenobi,true
+93,Luke Skywalker,true
+93,Han Solo,true
+93,Obi-Wan Kenobi,true
+93,Chewbacca,false
+95,Luke Skywalker,true
+95,Han Solo,true
+95,Obi-Wan Kenobi,true
+101,Darth Vader,true
+102,Darth Vader,true
+103,Luke Skywalker,true
+103,Han Solo,true
+103,Obi-Wan Kenobi,true
+103,Chewbacca,false
+105,Luke Skywalker,true
+105,Han Solo,true
+105,Obi-Wan Kenobi,true
+105,C-3PO,true
+105,R2-D2,false
+105,Chewbacca,false
+106,Luke Skywalker,true
+106,Han Solo,false
+107,Obi-Wan Kenobi,false
+107,C-3PO,false
+108,Luke Skywalker,true
+108,Han Solo,true
+109,Luke Skywalker,true
+109,Han Solo,true
+109,Chewbacca,false
+110,Luke Skywalker,true
+110,Princess Leia,true
+111,Darth Vader,true
+112,Luke Skywalker,true
+112,Han Solo,true
+112,Princess Leia,true
+112,C-3PO,true
+112,Chewbacca,false
+113,C-3PO,true
+113,R2-D2,false
+114,Luke Skywalker,true
+114,Han Solo,true
+114,Princess Leia,true
+114,Chewbacca,false
+115,Luke Skywalker,true
+115,Han Solo,true
+115,Princess Leia,true
+115,Chewbacca,false
+116,Luke Skywalker,false
+116,C-3PO,true
+116,R2-D2,false
+117,Luke Skywalker,true
+117,Han Solo,true
+117,Princess Leia,true
+117,C-3PO,false
+117,Chewbacca,false
+118,C-3PO,true
+118,R2-D2,false
+119,Han Solo,true
+119,Princess Leia,true
+120,C-3PO,true
+120,R2-D2,false
+121,Luke Skywalker,false
+122,Luke Skywalker,false
+122,C-3PO,true
+123,Luke Skywalker,true
+124,Luke Skywalker,true
+124,C-3PO,true
+125,Luke Skywalker,true
+126,Luke Skywalker,true
+126,C-3PO,true
+127,Luke Skywalker,true
+127,Han Solo,false
+127,Princess Leia,false
+127,Chewbacca,false
+128,Han Solo,true
+129,Obi-Wan Kenobi,false
+130,Luke Skywalker,true
+130,Han Solo,true
+130,Princess Leia,true
+130,Chewbacca,false
+131,Obi-Wan Kenobi,false
+132,Luke Skywalker,true
+132,Han Solo,true
+132,Princess Leia,true
+132,C-3PO,true
+132,Chewbacca,false
+133,Han Solo,false
+134,Han Solo,false
+134,Chewbacca,false
+135,Luke Skywalker,false
+135,Princess Leia,false
+136,Luke Skywalker,true
+136,Princess Leia,true
+137,Darth Vader,false
+137,Obi-Wan Kenobi,false
+138,C-3PO,true
+138,R2-D2,false
+139,Han Solo,false
+139,Chewbacca,false
+140,Darth Vader,true
+140,Obi-Wan Kenobi,true
+141,Luke Skywalker,true
+141,Han Solo,true
+141,Princess Leia,true
+141,Chewbacca,false
+142,Luke Skywalker,true
+142,Han Solo,false
+142,Princess Leia,false
+142,Darth Vader,false
+142,Obi-Wan Kenobi,false
+142,Chewbacca,false
+143,Obi-Wan Kenobi,false
+143,C-3PO,true
+143,R2-D2,false
+144,Luke Skywalker,true
+144,Han Solo,true
+144,Princess Leia,true
+144,Darth Vader,false
+144,Obi-Wan Kenobi,false
+144,Chewbacca,false
+145,Han Solo,true
+145,Chewbacca,false
+147,Luke Skywalker,false
+147,Princess Leia,false
+147,Obi-Wan Kenobi,false
+148,Han Solo,true
+149,Luke Skywalker,true
+149,Han Solo,true
+149,Princess Leia,true
+149,R2-D2,false
+150,Han Solo,false
+151,Luke Skywalker,false
+151,Princess Leia,false
+152,Luke Skywalker,false
+153,Han Solo,true
+154,Princess Leia,false
+154,Chewbacca,false
+155,Han Solo,false
+156,Luke Skywalker,false
+157,Princess Leia,true
+157,Chewbacca,false
+161,C-3PO,false
+161,R2-D2,false
+162,Luke Skywalker,false
+162,Han Solo,false
+164,Luke Skywalker,true
+166,Princess Leia,false
+166,Chewbacca,false
+169,C-3PO,true
+170,Han Solo,true
+170,Princess Leia,true
+170,R2-D2,false
+170,Chewbacca,false
+171,Luke Skywalker,false
+172,Han Solo,false
+174,Princess Leia,false
+176,Luke Skywalker,false
+178,Luke Skywalker,false
+178,Han Solo,false
+180,Luke Skywalker,true
+180,Han Solo,true
+182,Princess Leia,true
+182,Chewbacca,false
+184,Luke Skywalker,false
+184,Han Solo,false
+186,Luke Skywalker,false
+188,Luke Skywalker,true
+188,Han Solo,false
+188,Princess Leia,true
+188,Chewbacca,false
+189,C-3PO,true
+189,R2-D2,false
+191,Darth Vader,true
+192,Luke Skywalker,true
+192,Han Solo,true
+192,Princess Leia,true
+192,Chewbacca,false
+196,Luke Skywalker,false
+196,Han Solo,false
+197,Princess Leia,true
+199,Darth Vader,false
+201,Luke Skywalker,true
+201,Han Solo,false
+201,Princess Leia,false
+201,R2-D2,false
+201,Chewbacca,false
+203,Darth Vader,true
+204,Luke Skywalker,true
+204,Han Solo,true
+204,C-3PO,false
+204,R2-D2,false
+204,Chewbacca,false
+205,Luke Skywalker,true
+205,Princess Leia,true
+205,C-3PO,true
+205,R2-D2,false
+207,C-3PO,false
+215,Luke Skywalker,true
+216,Luke Skywalker,false
+216,R2-D2,false
+221,Luke Skywalker,false
+232,Princess Leia,false
+232,C-3PO,false
+237,Luke Skywalker,true
+238,Luke Skywalker,false
+239,Luke Skywalker,false
+240,Luke Skywalker,false
+242,Luke Skywalker,true
+244,Darth Vader,true
+247,Luke Skywalker,true
+248,Luke Skywalker,false
+249,Luke Skywalker,false
+250,Luke Skywalker,false
+251,Luke Skywalker,false
+255,Princess Leia,false
+256,Luke Skywalker,true
+264,Luke Skywalker,true
+265,Luke Skywalker,false
+266,Luke Skywalker,false
+267,Luke Skywalker,true
+268,Darth Vader,true
+269,Princess Leia,false
+269,C-3PO,false
+270,Luke Skywalker,false
+271,Luke Skywalker,false
+272,Luke Skywalker,false
+273,Luke Skywalker,false
+274,Luke Skywalker,true
+275,Luke Skywalker,false
+275,R2-D2,false
+276,Luke Skywalker,false
+277,Luke Skywalker,false
+277,Princess Leia,false
+278,Luke Skywalker,true
+279,Luke Skywalker,false
+281,Luke Skywalker,false
+282,Luke Skywalker,false
+284,Luke Skywalker,true
+286,Luke Skywalker,false
+287,Luke Skywalker,true
+288,Princess Leia,false
+288,C-3PO,false
+291,Princess Leia,false
+293,Darth Vader,true
+302,Princess Leia,false
+302,C-3PO,false
+305,Luke Skywalker,false
+308,Darth Vader,false
+309,Darth Vader,true
+311,Darth Vader,false
+321,Darth Vader,false
+322,Darth Vader,false
+325,Luke Skywalker,false
+329,Luke Skywalker,false
+334,Luke Skywalker,false
+335,Luke Skywalker,false
+336,Luke Skywalker,false
+347,Luke Skywalker,true
+348,Luke Skywalker,true
+349,Darth Vader,false
+353,Darth Vader,true
+356,Darth Vader,false
+357,Darth Vader,false
+358,Darth Vader,false
+359,Darth Vader,false
+362,Darth Vader,false
+363,Darth Vader,false
+364,Darth Vader,false
+369,Princess Leia,false
+371,Darth Vader,false
+372,Darth Vader,false
+373,Luke Skywalker,true
+374,Luke Skywalker,true
+376,Luke Skywalker,false
+377,Darth Vader,false
+379,Darth Vader,false
+380,Luke Skywalker,false
+382,Luke Skywalker,true
+382,Princess Leia,false
+382,C-3PO,false
+386,Luke Skywalker,true
+388,Luke Skywalker,false
+389,Luke Skywalker,false
+391,Luke Skywalker,true
+393,Luke Skywalker,true
+394,Luke Skywalker,false
+395,Luke Skywalker,true
+396,Luke Skywalker,false
+396,R2-D2,false
+399,Luke Skywalker,false
+400,Darth Vader,false
+401,Darth Vader,false
+402,Luke Skywalker,true
+402,Princess Leia,false
+403,Luke Skywalker,true
+406,Darth Vader,true
+407,Luke Skywalker,false
+409,Luke Skywalker,false
+410,Luke Skywalker,true
+410,R2-D2,false
+411,Luke Skywalker,false
+411,R2-D2,false
+413,Darth Vader,false
+415,Luke Skywalker,false
+416,Luke Skywalker,false
+416,Darth Vader,false
+418,Darth Vader,false
+421,Princess Leia,false
+422,Luke Skywalker,false
+424,Luke Skywalker,false
+424,Darth Vader,true
+425,Luke Skywalker,false
+426,Princess Leia,false
+426,C-3PO,true
+427,Luke Skywalker,false
+428,Luke Skywalker,false
+429,Darth Vader,false
+430,Luke Skywalker,false
+431,Luke Skywalker,false
+432,Luke Skywalker,false
+434,Luke Skywalker,false
+434,Obi-Wan Kenobi,false
+435,Luke Skywalker,false
+436,Darth Vader,true
+437,Luke Skywalker,false
+437,Darth Vader,false
+438,Luke Skywalker,false
+438,Obi-Wan Kenobi,false
+439,Luke Skywalker,true
+439,Princess Leia,false
+440,Luke Skywalker,false
+441,Luke Skywalker,false
+442,Luke Skywalker,false
+442,R2-D2,false
+443,Luke Skywalker,false
+443,Darth Vader,false
+444,Luke Skywalker,false
+444,Darth Vader,false
+445,Luke Skywalker,false
+445,Darth Vader,false
+445,R2-D2,false
+446,Luke Skywalker,false
+446,R2-D2,false
+447,Luke Skywalker,true
+447,R2-D2,false
+448,Princess Leia,false
+448,C-3PO,false
+450,Luke Skywalker,false
+451,Luke Skywalker,false
+452,Darth Vader,false
+453,Luke Skywalker,false
+454,Luke Skywalker,false
+454,Darth Vader,true
+455,Luke Skywalker,false
+455,Darth Vader,false
+456,Luke Skywalker,false
+456,Darth Vader,false
+457,Darth Vader,true
+458,Darth Vader,false
+459,Han Solo,true
+459,Chewbacca,false
+462,Darth Vader,false
+463,Darth Vader,false
+464,Darth Vader,false
+465,Han Solo,false
+466,Luke Skywalker,false
+466,Han Solo,true
+467,Han Solo,true
+467,Princess Leia,false
+468,Luke Skywalker,false
+469,Luke Skywalker,false
+470,Luke Skywalker,false
+475,Han Solo,true
+476,Luke Skywalker,false
+477,Darth Vader,false
+479,Luke Skywalker,true
+479,Han Solo,true
+479,Princess Leia,true
+479,C-3PO,true
+479,R2-D2,false
+480,Luke Skywalker,false
+480,Han Solo,false
+480,Princess Leia,false
+480,C-3PO,false
+480,R2-D2,false
+480,Chewbacca,false
