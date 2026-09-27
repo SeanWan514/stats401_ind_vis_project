@@ -15,13 +15,13 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260927-2" />
+    <link rel="stylesheet" href="styles.css?v=20260927-3" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to project</a>
     <header class="site-header" aria-label="Primary navigation">
       <a class="brand" href="#overview" aria-label="Return to overview">
-        <span class="brand-mark" aria-hidden="true">✦</span>
+        <img class="star-wars-logo header-logo" src="assets/images/star-wars-logo.png" alt="" aria-hidden="true" />
         <span>STATS 401 / STAR WARS EPISODE IV VISUALIZATION</span>
       </a>
       <nav class="chapter-nav" aria-label="Project chapters">
@@ -210,11 +210,20 @@
         <div class="section-heading">
           <p class="chapter-label"><span>05</span> Assignment Part 4 · Redesign</p>
           <h2 id="redesign-title">Revised: Four-View Dashboard</h2>
-          <p class="section-lead">
-            Author's Note: my redesign intentionally focuses on eight principal characters to add
-            clarity. Notice that every view uses the same screenplay-derived presence definition
-            and the same visual identity system.
-          </p>
+          <div class="section-lead redesign-argument panel">
+            <strong>Why four coordinated views?</strong>
+            <p>
+              First, View 01 is the direct redesign: it preserves the familiar node-link model but
+              limits the network to eight principal characters, spreads the layout, defines the
+              encodings, and adds dragging, exact tooltips, and linked focus to resolve the original
+              hairball. Second, the audience’s tasks extend beyond tracing connections. The matrix
+              quantifies pairwise relationships, the treemap places each character’s presence within
+              the selected-cast whole, and the radial view reconnects those measures to story order
+              and space. These are not four unrelated charts; they form one coordinated sequence—
+              relationship overview → exact comparison → proportional significance → narrative
+              context—designed to answer fans’ questions more completely than one network can.
+            </p>
+          </div>
         </div>
 
         <div class="method-banner panel">
@@ -270,7 +279,7 @@
               I add this matrix because the original network’s unaligned link widths do not support
               reliable quantitative comparison. The dataset contains all 28 unique pairs among the
               eight characters; each symmetric off-diagonal cell reports that pair’s number of
-              shared screenplay scenes. A stronger light-to-dark scale, exact labels, and sorting
+              shared screenplay scenes. A perceptually ordered light-to-dark blue scale, exact labels, and sorting
               make pair lookup, ranking, extrema, and cluster detection substantially more precise.
             </p>
             <label class="select-label" for="matrix-sort">Order characters</label>
@@ -354,34 +363,44 @@
           <h2 id="explanation-title">Design Decisions Explanation</h2>
         </div>
 
+        <div class="design-sequence panel" aria-label="Progression of the four-view redesign">
+          <span><b>01</b> Repair the network</span>
+          <i aria-hidden="true">→</i>
+          <span><b>02</b> Quantify relationships</span>
+          <i aria-hidden="true">→</i>
+          <span><b>03</b> Compare proportions</span>
+          <i aria-hidden="true">→</i>
+          <span><b>04</b> Return to story space</span>
+        </div>
+
         <div class="decision-grid">
           <article class="decision-card panel">
-            <span>01</span><h3>Reduce clutter while preserving the relationship model</h3>
-            <p><strong>What changed:</strong> I retained eight declared principal characters, fixed a readable starting layout, added direct labels, and made every node draggable with node and link tooltips.</p>
-            <p><strong>Why:</strong> the original node-link metaphor is intuitive, so it should be improved rather than discarded.</p>
-            <p><strong>Problem addressed:</strong> overlapping marks, crossings, weak hierarchy, and inaccessible exact values in the original hairball.</p>
-            <p><strong>Improvement:</strong> viewers can trace neighborhoods, rearrange occluded relationships, and retrieve exact individual or pairwise scene counts while retaining a recognizable overview.</p>
+            <span>01</span><h3>Repair the original node-link foundation</h3>
+            <p><strong>What changed:</strong> I retained eight principal characters, spread them across a larger stable layout, added direct encoding captions, and made nodes and links draggable, selectable, and available through exact tooltips.</p>
+            <p><strong>Why this comes first:</strong> the familiar node-link model remains useful for relationship overview, but the minor characters add far more clutter and crossings than analytical value for the intended audience.</p>
+            <p><strong>Problem addressed:</strong> the original hairball, weak hierarchy, overlapping labels, ambiguous encodings, and inaccessible values.</p>
+            <p><strong>Improvement:</strong> viewers retain the original visualization’s intuitive topology while gaining a clearer layout, explanations, focused interaction, and exact scene evidence.</p>
           </article>
           <article class="decision-card panel">
-            <span>02</span><h3>Add a matrix for defensible quantitative comparison</h3>
-            <p><strong>What changed:</strong> I added an 8 × 8 adjacency matrix with exact labels, high-contrast ordered luminance, and three meaningful sort orders.</p>
-            <p><strong>Why:</strong> position in aligned rows and columns supports more accurate comparison than judging unaligned link widths.</p>
-            <p><strong>Problem addressed:</strong> the original makes close relationship strengths difficult to rank and provides no reliable lookup scale.</p>
-            <p><strong>Improvement:</strong> viewers can identify maxima, compare any pair, expose clusters, and verify the same relationship shown in the network.</p>
+            <span>02</span><h3>Take one step further: quantify relationships</h3>
+            <p><strong>What changed:</strong> I added an 8 × 8 adjacency matrix with exact counts, an ordered blue luminance scale, and three meaningful sort orders.</p>
+            <p><strong>Why this follows the network:</strong> the network reveals who connects, but the matrix lets viewers quantify how strongly every pair co-occurs and compare those values on aligned rows and columns.</p>
+            <p><strong>Problem addressed:</strong> unaligned link widths make close relationships difficult to rank and provide no reliable lookup scale.</p>
+            <p><strong>Improvement:</strong> viewers can move from a structural overview to defensible pairwise measurement, identify maxima, and verify the same relationship across both views.</p>
           </article>
           <article class="decision-card panel">
-            <span>03</span><h3>Separate individual presence from connectivity</h3>
-            <p><strong>What changed:</strong> I added a treemap whose area represents each character’s share of 536 total character-scene appearances among the selected eight.</p>
-            <p><strong>Why:</strong> frequent appearance and network centrality are related but distinct ideas that should not be compressed into one mark.</p>
-            <p><strong>Problem addressed:</strong> the original provides little compositional context and encourages node size to carry too much interpretive weight.</p>
-            <p><strong>Improvement:</strong> the additive denominator supports a valid part-to-whole task and lets viewers compare narrative presence against relationship structure.</p>
+            <span>03</span><h3>Move from quantity to proportional significance</h3>
+            <p><strong>What changed:</strong> I added a treemap whose area represents each character’s share of 536 character-scene appearances among the selected eight.</p>
+            <p><strong>Why this advances the analysis:</strong> after quantifying pairs, the next audience question is how significant each character is within the selected cast’s total screenplay presence.</p>
+            <p><strong>Problem addressed:</strong> connectivity and individual prominence are distinct, while the original provides no valid part-to-whole context.</p>
+            <p><strong>Improvement:</strong> viewers can compare both quantity and percentage in the movie’s screenplay context without falsely treating overlapping character appearances as film-runtime shares.</p>
           </article>
           <article class="decision-card panel">
-            <span>04</span><h3>Restore story order and narrative space</h3>
-            <p><strong>What changed:</strong> I placed relevant scenes in screenplay order on an outer circle, divided an inner circle into four location sectors, and bundled colored scene-to-space connections.</p>
-            <p><strong>Why:</strong> aggregate social ties cannot explain where a scene occurs or how a character’s path moves through the story.</p>
-            <p><strong>Problem addressed:</strong> missing chronology, setting, and details-on-demand in the original visualization.</p>
-            <p><strong>Improvement:</strong> viewers can follow spatial concentration, filter a character’s scenes, and connect sequence and setting without confusing either with relationship strength.</p>
+            <span>04</span><h3>Return the evidence to story space</h3>
+            <p><strong>What changed:</strong> I ordered relevant scenes around an outer circle, divided the inner circle into four narrative spaces, and bundled scene-to-space connections with character filtering.</p>
+            <p><strong>Why this completes the sequence:</strong> fans may want to know not only who, how much, and what proportion, but also where those appearances occur within the story.</p>
+            <p><strong>Problem addressed:</strong> the preceding aggregate views omit chronology, setting, and movement through the movie’s narrative context.</p>
+            <p><strong>Improvement:</strong> viewers can return the quantitative evidence to the story, follow spatial concentration, and explore a character’s path rather than encounter an unrelated decorative chart.</p>
           </article>
         </div>
 
@@ -456,26 +475,26 @@
 
             <h4>Redesign rationale</h4>
             <p>
-              The redesign coordinates four complementary D3 views. First, the node-link view retains
-              the original’s intuitive structure but limits scope to eight declared principal
-              characters. A stable starting layout, direct labels, dragging, linked highlighting, and
-              node and edge tooltips reduce clutter while preserving exploratory topology. Second, an
-              8 × 8 adjacency matrix represents all 28 unique pairs using aligned cells, exact counts,
-              sortable order, and a high-contrast sequential scale. This makes maxima, close values,
-              and clusters more defensible than comparisons based only on link width. The two views
-              are intentionally redundant: the network supports topology and paths, whereas the matrix
-              supports exact pairwise comparison. Linked selection preserves their relationship.
+              The redesign is a progressive analytical sequence, not four unrelated charts. First,
+              the node-link view directly repairs the original. It limits scope to eight declared
+              principal characters because the clutter created by minor nodes outweighs their value
+              for the intended tasks. A spread-out starting layout, direct captions, dragging, linked
+              highlighting, and exact node and edge tooltips preserve intuitive topology while
+              resolving the hairball and ambiguous-value problems. Second, the 8 × 8 adjacency matrix
+              takes the analysis one step further: aligned cells, exact counts, sortable order, and a
+              perceptually ordered blue scale quantify all 28 unique character pairs more reliably
+              than unaligned link widths. The network supplies overview; the matrix supplies measurement.
             </p>
             <p>
-              Third, a treemap separates individual presence from connectivity. Area encodes each
-              character’s share of 536 character-scene appearances accumulated by the selected eight.
-              This is a valid additive whole; it deliberately does not claim that overlapping
-              character appearances partition film runtime. Fourth, a circular scene-space view adds
-              context absent from the original. Its outer circle orders 300 relevant scenes, its
-              segmented inner circle identifies Tatooine, the Death Star, Yavin IV, and Outer
-              Space/Spacecraft, and bundled colored curves connect every scene to its coded setting.
-              Filtering exposes an individual character’s spatial path. Coordinated selection across
-              all views supplies details on demand without permanently increasing clutter.
+              Third, the treemap moves from pairwise quantity to proportional significance. Area shows
+              each character’s share of 536 appearances accumulated by the selected cast, creating a
+              valid additive whole without claiming that overlapping appearances partition film
+              runtime. Fourth, the circular scene-space view returns those measurements to the movie’s
+              narrative context. Its outer circle orders 300 relevant scenes; four inner sectors encode
+              Tatooine, the Death Star, Yavin IV, and Outer Space/Spacecraft; and bundled curves connect
+              every scene to its setting. Character filtering reveals spatial paths. Together, the four
+              linked views progress from relationship overview to exact comparison, proportional
+              presence, and story space—the broader set of tasks that fans are likely to pursue.
             </p>
 
             <h4>Original versus redesign, trade-offs, and limitations</h4>
@@ -490,9 +509,11 @@
               draft, not finished-film timing. Scene presence is inferred from speaker cues and action
               text, and draft or rapidly cross-cut scenes may differ from the released movie. The
               dashboard labels these limits to prevent stronger claims than the data supports. The
-              four-view approach also increases learning cost and page length, but short reading guides,
-              consistent character colors, direct labels, and coordinated interaction mitigate that
-              cost while keeping each view responsible for a clearly stated analytical task.
+              dashboard is therefore not an attempt to add complexity for display: fixing the network
+              alone would still leave comparison, composition, chronology, and setting unanswered.
+              Four views increase learning cost and page length, but short reading guides, consistent
+              colors, direct labels, and coordinated interaction make them function as one fan-oriented
+              final product rather than four disconnected demonstrations.
             </p>
 
             <h4>Figures and references</h4>
@@ -508,11 +529,27 @@
           </div>
           <p class="report-count"><span id="report-word-count">—</span> words · Figures 1–5 appear in the project above.</p>
         </article>
+
+        <aside class="submission-note panel" aria-labelledby="submission-note-title">
+          <p class="micro-label">Submission structure</p>
+          <h3 id="submission-note-title">Both required deliverables are preserved</h3>
+          <p>
+            This project uses a dedicated GitHub Pages repository so the graded submission remains
+            clean, self-contained, and isolated from unrelated course experiments that could
+            accidentally affect it. This organizational choice does not replace either required
+            deliverable: the <strong>GitHub Pages visualization</strong> above contains the original
+            work, redesign, external data, and references, while the complete 500–800-word
+            <strong>Visualization Critique and Redesign Report</strong> appears both directly on this
+            page and as a separately reviewable
+            <a href="https://github.com/SeanWan514/stats401_ind_vis_project/blob/main/REPORT.md" target="_blank" rel="noreferrer">REPORT.md file in the project repository <span aria-hidden="true">↗</span></a>.
+          </p>
+        </aside>
       </section>
 
       <section id="conclusion" class="chapter conclusion" aria-labelledby="conclusion-title">
         <div class="conclusion-scrim" aria-hidden="true"></div>
         <div class="conclusion-content">
+          <img class="star-wars-logo conclusion-logo" src="assets/images/star-wars-logo.png" alt="Star Wars" />
           <p class="eyebrow">Chapter 08 · Conclusion</p>
           <h2 id="conclusion-title">Conclusion</h2>
           <p>
@@ -553,10 +590,10 @@
           <a href="https://www.starwars.com/news/parenting-padawans-5-star-wars-characters-i-was-surprised-to-learn-my-kids-love" target="_blank" rel="noreferrer">Chewbacca portrait source <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <p class="copyright-note">Educational project. <em>Star Wars</em> character and location images © Lucasfilm Ltd.; used for commentary and analysis.</p>
+      <p class="copyright-note">Educational project. The <em>Star Wars</em> logo, character images, and location images are © Lucasfilm Ltd. and are used for educational commentary and analysis; this project is not affiliated with or endorsed by Lucasfilm.</p>
     </footer>
     <div id="chart-tooltip" class="chart-tooltip" role="status" aria-live="polite"></div>
     <script src="assets/vendor/d3.v7.min.js"></script>
-    <script src="app.js?v=20260927-2"></script>
+    <script src="app.js?v=20260927-3"></script>
   </body>
 </html>

@@ -90,6 +90,7 @@ def main() -> None:
         DIST / "assets" / "images" / "hero-original.png",
         DIST / "assets" / "images" / "outro-original.png",
         DIST / "assets" / "images" / "original-episode4-network.png",
+        DIST / "assets" / "images" / "star-wars-logo.png",
     ]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.is_file()]
     if missing:
@@ -139,6 +140,9 @@ def main() -> None:
     for feature in ("d3.drag()", "d3.curveBundle", "renderMatrix", "renderTreemap", "renderRadial"):
         if feature not in app:
             fail(f"required D3 feature is absent: {feature}")
+    for required_copy in ("Why four coordinated views?", "submission-note", "REPORT.md"):
+        if required_copy not in html:
+            fail(f"required submission explanation is absent: {required_copy}")
 
     print("Submission validation passed")
     print(f"  chapters: {len(EXPECTED_SECTIONS)}")

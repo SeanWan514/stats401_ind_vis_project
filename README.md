@@ -20,6 +20,8 @@ The page is organized into eight clearly labeled chapters: overview, selection, 
 
 ## 🚀 Four coordinated views
 
+The redesign follows one purposeful analytical progression: **repair the original network → quantify relationships → compare proportional significance → return the evidence to story space**. The three added views are not decorative alternatives; together with the revised node-link view, they answer comparison, composition, and narrative-context tasks that one network cannot support reliably.
+
 | View | Analytical purpose | Interaction |
 |---|---|---|
 | Weighted node-link network | Understand topology and frequent co-presence | Drag nodes; hover nodes/links; select a character or pair |
@@ -28,6 +30,10 @@ The page is organized into eight clearly labeled chapters: overview, selection, 
 | Circular scene-space map | Follow scenes through four coded narrative spaces | Filter characters; inspect scenes and bundled paths |
 
 Selections are coordinated across all four views. Character colors, names, metric definitions, and tooltips remain consistent throughout.
+
+## 📦 Submission structure
+
+The dedicated repository keeps the graded work self-contained and separate from unrelated course experiments. It preserves both required deliverables: the [GitHub Pages visualization](https://seanwan514.github.io/stats401_ind_vis_project/) and the 795-word report, available [inside the webpage](https://seanwan514.github.io/stats401_ind_vis_project/#report) and as [`REPORT.md`](REPORT.md).
 
 ## 📐 Method and data
 

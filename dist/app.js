@@ -117,7 +117,7 @@
   }
 
   function renderNetwork() {
-    const width = 820, height = 590;
+    const width = 820, height = 640;
     const svg = d3.select("#network-chart").attr("viewBox", `0 0 ${width} ${height}`);
     svg.selectAll("*").remove();
     svg.append("title").text("Draggable eight-character relationship network. Node size shows scene presence; link width shows shared scenes.");
@@ -137,15 +137,16 @@
 
     const simulation = d3.forceSimulation(nodes)
       .randomSource(d3.randomLcg(0.401))
-      .force("link", d3.forceLink(links).id(d => d.id).distance(d => 215 - d.shared_scenes * 2.6).strength(.75))
-      .force("charge", d3.forceManyBody().strength(-690))
+      .force("link", d3.forceLink(links).id(d => d.id).distance(d => 320 - d.shared_scenes * 1.2).strength(.34))
+      .force("charge", d3.forceManyBody().strength(-1800))
       .force("center", d3.forceCenter(width / 2, height / 2))
-      .force("collide", d3.forceCollide(d => radius(d.scene_count) + 38));
-    for (let i = 0; i < 360; i += 1) simulation.tick();
+      .force("radial", d3.forceRadial(258, width / 2, height / 2).strength(.28))
+      .force("collide", d3.forceCollide(d => radius(d.scene_count) + 60));
+    for (let i = 0; i < 420; i += 1) simulation.tick();
     simulation.stop();
     nodes.forEach(d => {
       d.x = Math.max(76, Math.min(width - 76, d.x));
-      d.y = Math.max(70, Math.min(height - 76, d.y));
+      d.y = Math.max(76, Math.min(height - 82, d.y));
     });
 
     const linkVisual = svg.append("g").selectAll("line")
@@ -213,7 +214,7 @@
     function ticked() {
       nodes.forEach(d => {
         d.x = Math.max(62, Math.min(width - 62, d.x));
-        d.y = Math.max(62, Math.min(height - 76, d.y));
+        d.y = Math.max(68, Math.min(height - 82, d.y));
       });
       linkVisual
         .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
@@ -232,7 +233,7 @@
       })
       .on("drag", (event, d) => {
         d.fx = Math.max(62, Math.min(width - 62, event.x));
-        d.fy = Math.max(62, Math.min(height - 76, event.y));
+        d.fy = Math.max(68, Math.min(height - 82, event.y));
         ticked();
       })
       .on("end", event => {
@@ -263,7 +264,8 @@
     const size = Math.min(width - margin.left - margin.right, height - margin.top - margin.bottom);
     const band = d3.scaleBand().domain(order).range([0, size]).padding(.045);
     const maxValue = d3.max(data.relationships, d => d.shared_scenes);
-    const color = d3.scaleSequential().domain([0, maxValue]).interpolator(t => d3.interpolateRgb("#f4f7fb", "#020817")(Math.pow(t, .72)));
+    const color = d3.scaleSequential().domain([0, maxValue]).interpolator(t =>
+      d3.interpolateRgbBasis(["#edf7ff", "#b8daf3", "#63a6d8", "#1f6fb2", "#08306b"])(Math.pow(t, .78)));
     const cells = order.flatMap(row => order.map(col => ({ row, col, value: matrixValue(row, col) })));
     const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -303,7 +305,7 @@
     cell.append("text")
       .attr("x", band.bandwidth() / 2).attr("y", band.bandwidth() / 2)
       .attr("dy", ".35em").attr("text-anchor", "middle")
-      .attr("fill", d => d.value === null || d.value > maxValue * .34 ? "#f7f2e7" : "#101621")
+      .attr("fill", d => d.value === null || d.value > maxValue * .42 ? "#f7f2e7" : "#0a2540")
       .attr("font-size", 12).attr("font-weight", 700)
       .text(d => d.value === null ? "—" : d.value);
 
