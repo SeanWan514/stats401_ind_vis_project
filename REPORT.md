@@ -33,6 +33,22 @@ The dashboard makes exact pair lookup, relationship ranking, character focusing,
 
 Figures 2–5 are the project’s four interactive D3 redesigns and appear on the [deployed project page](https://seanwan514.github.io/stats401_ind_vis_project/#redesign).
 
+![Figure 2: Redesigned eight-character weighted node-link network](dist/assets/images/report/figure-2-network.png)
+
+*Figure 2. Redesigned weighted node-link network.*
+
+![Figure 3: Blue adjacency matrix of shared screenplay scenes](dist/assets/images/report/figure-3-matrix.png)
+
+*Figure 3. Adjacency matrix for exact pairwise comparison.*
+
+![Figure 4: Treemap of principal-character screenplay scene appearances](dist/assets/images/report/figure-4-treemap.png)
+
+*Figure 4. Character-presence composition treemap.*
+
+![Figure 5: Radial map connecting screenplay scenes to four narrative spaces](dist/assets/images/report/figure-5-radial.png)
+
+*Figure 5. Radial scene-to-space mapping.*
+
 - Evelina Gabasova, [“The Star Wars social network”](https://evelinag.com/blog/2015/12-15-star-wars-social-network/)
 - Gabasova, [original visualization code](https://github.com/evelinag/StarWars-social-network)
 - Gabasova, [network data repository](https://github.com/evelinag/star-wars-network-data)

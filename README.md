@@ -33,7 +33,7 @@ Selections are coordinated across all four views. Character colors, names, metri
 
 ## 📦 Submission structure
 
-The dedicated repository keeps the graded work self-contained and separate from unrelated course experiments. It preserves both required deliverables: the [GitHub Pages visualization](https://seanwan514.github.io/stats401_ind_vis_project/) and the 795-word report, available [inside the webpage](https://seanwan514.github.io/stats401_ind_vis_project/#report) and as [`REPORT.md`](REPORT.md).
+The dedicated repository keeps the graded work self-contained and separate from unrelated course experiments. The [main STATS 401 course website](https://seanwan514.github.io/stats401-labs/) includes the required **Visualization Critique and Redesign** entry and links here. This repository preserves both deliverables: the [GitHub Pages visualization](https://seanwan514.github.io/stats401_ind_vis_project/) and the 795-word report, available [inside the webpage](https://seanwan514.github.io/stats401_ind_vis_project/#report) and as [`REPORT.md`](REPORT.md).
 
 ## 📐 Method and data
 

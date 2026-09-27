@@ -181,6 +181,12 @@ figcaption { padding: .85rem 1rem; color: var(--muted); font-size: .88rem; borde
 .report-body h4 { margin: 2rem 0 .5rem; color: var(--gold); font: 700 .9rem/1.3 var(--display); letter-spacing: .08em; text-transform: uppercase; }
 .report-body h4:first-child { margin-top: 0; }
 .report-references a { color: var(--gold); text-underline-offset: .18rem; }
+.report-figure-gallery { padding: 1.5rem; border-top: 1px solid var(--line); }
+.report-figure-gallery h4 { margin: 0 0 1rem; color: var(--gold); font: 700 .78rem/1.4 var(--display); letter-spacing: .12em; text-transform: uppercase; }
+.report-figure-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.report-figure-grid figure { margin: 0; overflow: hidden; background: #080c15; border: 1px solid var(--line); }
+.report-figure-grid img { display: block; width: 100%; height: auto; }
+.report-figure-grid figcaption { min-height: 3.7rem; }
 .report-count { margin: 0; padding: 1rem 1.5rem; color: var(--muted); text-align: right; border-top: 1px solid var(--line); }
 .submission-note { margin-top: 1.5rem; padding: clamp(1.35rem, 3vw, 2rem); border-color: rgba(244,207,99,.58); border-left: 4px solid var(--gold); background: linear-gradient(135deg, rgba(49,42,18,.46), rgba(13,20,34,.95)); }
 .submission-note h3 { margin: 0 0 .65rem; font: 750 clamp(1.1rem, 2.5vw, 1.5rem)/1.3 var(--display); }
@@ -237,6 +243,7 @@ figcaption { padding: .85rem 1rem; color: var(--muted); font-size: .88rem; borde
   .resource-groups { grid-template-columns: 1fr; }
   .design-sequence { grid-template-columns: 1fr; }
   .design-sequence span { text-align: left; }
+  .report-figure-grid { grid-template-columns: 1fr; }
   .display-title { font-size: clamp(3rem, 17vw, 5rem); }
   .hero-facts { display: grid; grid-template-columns: 1fr; }
   .hero-facts div { border-right: 0; border-bottom: 1px solid var(--line); padding-block: .8rem; }

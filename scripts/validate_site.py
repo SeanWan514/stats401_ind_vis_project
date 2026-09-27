@@ -91,6 +91,10 @@ def main() -> None:
         DIST / "assets" / "images" / "outro-original.png",
         DIST / "assets" / "images" / "original-episode4-network.png",
         DIST / "assets" / "images" / "star-wars-logo.png",
+        DIST / "assets" / "images" / "report" / "figure-2-network.png",
+        DIST / "assets" / "images" / "report" / "figure-3-matrix.png",
+        DIST / "assets" / "images" / "report" / "figure-4-treemap.png",
+        DIST / "assets" / "images" / "report" / "figure-5-radial.png",
     ]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.is_file()]
     if missing:
