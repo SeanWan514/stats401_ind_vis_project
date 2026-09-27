@@ -15,14 +15,14 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260927-2" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to project</a>
     <header class="site-header" aria-label="Primary navigation">
       <a class="brand" href="#overview" aria-label="Return to overview">
         <span class="brand-mark" aria-hidden="true">✦</span>
-        <span>STATS 401 / EP IV</span>
+        <span>STATS 401 / STAR WARS EPISODE IV VISUALIZATION</span>
       </a>
       <nav class="chapter-nav" aria-label="Project chapters">
         <a class="active" href="#overview"><span>01</span> Overview</a>
@@ -30,8 +30,9 @@
         <a href="#analysis"><span>03</span> Analysis</a>
         <a href="#critique"><span>04</span> Critique</a>
         <a href="#redesign"><span>05</span> Redesign</a>
-        <a href="#rationale"><span>06</span> Rationale</a>
-        <a href="#conclusion"><span>07</span> Conclusion</a>
+        <a href="#explanation"><span>06</span> Explanation</a>
+        <a href="#report"><span>07</span> Report</a>
+        <a href="#conclusion"><span>08</span> Conclusion</a>
       </nav>
     </header>
 
@@ -39,19 +40,14 @@
       <section id="overview" class="hero chapter" aria-labelledby="hero-title">
         <div class="hero-scrim" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Visualization Critique &amp; Redesign · STATS 401</p>
           <h1 id="hero-title">
             <span class="title-kicker">Characters across</span>
             <span class="display-title">A New Hope</span>
           </h1>
           <p class="hero-deck">
-            From an impressive—but crowded—social-network “hairball” to a
+            From an impressive but crowded social-network hairball to a
             coordinated visual story of prominence, relationships, and place.
           </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#selection">Begin the critique</a>
-            <a class="button button-ghost" href="#redesign">Explore the redesign</a>
-          </div>
           <dl class="hero-facts" aria-label="Project facts">
             <div><dt>Focus</dt><dd>8 principal characters</dd></div>
             <div><dt>Evidence</dt><dd>480 screenplay scenes</dd></div>
@@ -65,9 +61,9 @@
           <p class="chapter-label"><span>02</span> Assignment Part 1 · Select</p>
           <h2 id="selection-title">The visualization under review</h2>
           <p class="section-lead">
-            Evelina Gabasova’s Episode IV network is a rich public example: technically
-            ambitious, immediately recognizable, and complex enough to support a meaningful
-            redesign rather than a cosmetic restyle.
+            I choose Evelina Gabasova’s Episode IV network to analyze and revise, which is a rich
+            public example: it is technically ambitious, immediately recognizable, and complex
+            enough to support a meaningful redesign rather than a cosmetic restyle.
           </p>
         </div>
 
@@ -93,19 +89,20 @@
             </dl>
             <a class="text-link" href="https://evelinag.com/blog/2015/12-15-star-wars-social-network/" target="_blank" rel="noreferrer">Open the original article <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="https://zenodo.org/records/1411479" target="_blank" rel="noreferrer">Open the archived dataset <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://github.com/evelinag/StarWars-social-network" target="_blank" rel="noreferrer">Open the original GitHub repository <span aria-hidden="true">↗</span></a>
           </aside>
         </div>
 
         <div class="data-description callout">
-          <span class="callout-icon" aria-hidden="true">DATA</span>
           <div>
-            <h3>What the original data represents</h3>
+            <h3>Original Design Description</h3>
             <p>
-              Nodes are screenplay characters. A link is created when two characters speak
-              within the same screenplay scene; its weight counts those shared speaking scenes.
-              Node size represents the number of scenes attributed to a character. The published
-              “all characters” version supplements R2-D2 and Chewbacca with mention-based
-              approximations, an important methodological caveat for interpretation.
+              In this original visualization, nodes are denoted as screenplay characters; a link
+              is created when two characters speak within the same screenplay scene; its weight
+              counts those shared speaking scenes. Node size represents the number of scenes
+              attributed to a character. The published “all characters” version supplements R2-D2
+              and Chewbacca with mention-based approximations, which is an important methodological
+              caveat for interpretation.
             </p>
           </div>
         </div>
@@ -115,10 +112,6 @@
         <div class="section-heading">
           <p class="chapter-label"><span>03</span> Assignment Part 2 · Analyze</p>
           <h2 id="analysis-title">Message, audience, and intended tasks</h2>
-          <p class="section-lead">
-            The graphic is best understood as an exploratory map of narrative relationships—not
-            as chronology, emotional closeness, or literal screen time.
-          </p>
         </div>
 
         <div class="analysis-grid">
@@ -155,11 +148,6 @@
             </ul>
           </article>
         </div>
-        <p class="definition-strip">
-          <strong>Operational definition:</strong> in the original, an “interaction” means two
-          characters speak within the same screenplay scene. It does not measure sentiment or
-          relationship quality.
-        </p>
       </section>
 
       <section id="critique" class="chapter section-shell" aria-labelledby="critique-title">
@@ -167,8 +155,10 @@
           <p class="chapter-label"><span>04</span> Assignment Part 3 · Critique</p>
           <h2 id="critique-title">What works—and what the hairball hides</h2>
           <p class="section-lead">
-            The original succeeds as an overview, but its encoding and interaction design make
-            precise comparison and methodological interpretation unnecessarily difficult.
+            Author's Note: the original visualization succeeds as an overview, but its encoding
+            and interaction design make precise comparison and methodological interpretation
+            unnecessarily difficult. After careful consideration, I decided to use four new
+            visualizations to together do the task.
           </p>
         </div>
 
@@ -176,41 +166,41 @@
           <div>
             <h3 class="column-title strength-title"><span>2</span> Strengths</h3>
             <article class="critique-card panel good">
-              <h4>Intuitive relationship model</h4>
+              <h4>The relationship model is intuitive</h4>
               <p><strong>What works:</strong> nodes and links match the familiar mental model of a social network.</p>
               <p><strong>Why it matters:</strong> fans can quickly determine whether characters are connected without learning a specialized chart grammar.</p>
             </article>
             <article class="critique-card panel good">
-              <h4>Comprehensive, compact overview</h4>
+              <h4>Author creates a comprehensive and compact overview</h4>
               <p><strong>What works:</strong> the view includes the broad Episode IV cast while using size and link width to encode two quantitative attributes.</p>
               <p><strong>Why it matters:</strong> it exposes major characters, minor groups, and network shape in one space-efficient display.</p>
             </article>
           </div>
           <div>
-            <h3 class="column-title weakness-title"><span>4</span> Opportunities</h3>
+            <h3 class="column-title weakness-title"><span>4</span> Weaknesses / Opportunities</h3>
             <article class="critique-card panel bad">
-              <h4>Ambiguous measures and preprocessing</h4>
-              <p><strong>Problem:</strong> the graphic itself does not clearly define a scene, interaction, node size, or the special handling of non-speaking characters.</p>
-              <p><strong>Impact:</strong> viewers may misread co-speaking frequency as screen time or emotional closeness.</p>
-              <p><strong>Response:</strong> surface definitions, legends, provenance, and limitations beside the redesigned views.</p>
+              <h4>Labels and legends do not define the visual encodings</h4>
+              <p><strong>Problem:</strong> the chart does not visibly define a scene, interaction, node-size scale, link-width scale, or the special handling of non-speaking characters.</p>
+              <p><strong>Why it matters:</strong> the intended audience can mistake co-occurrence frequency for screen time or emotional closeness, so the marks and channels become semantically ambiguous.</p>
+              <p><strong>Improvement:</strong> every redesigned view now names its measure, denominator, and unit; tooltips expose exact values, while the method note and report document provenance and limitations.</p>
             </article>
             <article class="critique-card panel bad">
-              <h4>Edge crossings create a hairball</h4>
-              <p><strong>Problem:</strong> many nodes, labels, and overlapping links compete for attention.</p>
-              <p><strong>Impact:</strong> tracing a pair or finding clusters becomes slow and error-prone.</p>
-              <p><strong>Response:</strong> focus on eight principal characters and add selective highlighting.</p>
+              <h4>Marks, position, and visual hierarchy create a hairball</h4>
+              <p><strong>Problem:</strong> dozens of nodes, labels, and crossing links compete for the same space; force-directed position is visually prominent even though distance has no quantitative scale.</p>
+              <p><strong>Why it matters:</strong> occlusion and weak hierarchy make tracing a relationship, locating a bridge, or identifying a cluster slow and error-prone.</p>
+              <p><strong>Improvement:</strong> the interactive network limits scope to eight declared principal characters, uses direct labels, and supports dragging, hover details, and linked focus across all four views.</p>
             </article>
             <article class="critique-card panel bad">
-              <h4>Width is weak for exact comparison</h4>
-              <p><strong>Problem:</strong> unaligned edge widths are difficult to rank, and force-directed distance is not a quantitative scale.</p>
-              <p><strong>Impact:</strong> viewers cannot reliably retrieve or compare relationship values.</p>
-              <p><strong>Response:</strong> provide an adjacency matrix with aligned cells, ordered luminance, and exact counts.</p>
+              <h4>Link width is ineffective for precise comparison</h4>
+              <p><strong>Problem:</strong> link widths are unaligned, lack tick marks or an axis, and must be compared across different orientations; color does not provide a redundant quantitative cue.</p>
+              <p><strong>Why it matters:</strong> viewers cannot reliably rank close values, retrieve an exact pair count, or locate the strongest and weakest relationships.</p>
+              <p><strong>Improvement:</strong> the adjacency matrix adds aligned cells, a high-contrast sequential luminance scale, exact numbers, and sortable order for lookup, extrema, and cluster tasks.</p>
             </article>
             <article class="critique-card panel bad">
-              <h4>Too little narrative context</h4>
-              <p><strong>Problem:</strong> the view shows aggregate connections but not where they occur or how individual prominence differs from connectivity.</p>
-              <p><strong>Impact:</strong> it supports only a narrow set of exploratory tasks.</p>
-              <p><strong>Response:</strong> add a composition view, scene-space map, and coordinated details on demand.</p>
+              <h4>The design does not support the full message or task set</h4>
+              <p><strong>Problem:</strong> one aggregate network shows neither each character’s share of appearances nor when and where scenes occur; shape, color, and position encode little narrative context.</p>
+              <p><strong>Why it matters:</strong> the audience can inspect adjacency but cannot compare prominence as a composition or connect relationships to story space and sequence.</p>
+              <p><strong>Improvement:</strong> the treemap supplies a valid part-to-whole view, while the circular scene-space diagram restores screenplay order, location categories, and details on demand.</p>
             </article>
           </div>
         </div>
@@ -219,11 +209,11 @@
       <section id="redesign" class="chapter section-shell redesign-section" aria-labelledby="redesign-title">
         <div class="section-heading">
           <p class="chapter-label"><span>05</span> Assignment Part 4 · Redesign</p>
-          <h2 id="redesign-title">Four views. One coordinated story.</h2>
+          <h2 id="redesign-title">Revised: Four-View Dashboard</h2>
           <p class="section-lead">
-            The redesign intentionally focuses on eight principal characters rather than claiming
-            they are the eight highest-ranked by a single noisy metric. Every view uses the same
-            screenplay-derived presence definition and the same visual identity system.
+            Author's Note: my redesign intentionally focuses on eight principal characters to add
+            clarity. Notice that every view uses the same screenplay-derived presence definition
+            and the same visual identity system.
           </p>
         </div>
 
@@ -231,18 +221,14 @@
           <div><span class="method-number">480</span><span>INT./EXT. screenplay scenes</span></div>
           <div><span class="method-number">300</span><span>scenes containing a selected character</span></div>
           <div><span class="method-number">8</span><span>principal characters, selected a priori</span></div>
-          <p>
-            <strong>Unit:</strong> a revised-fourth-draft screenplay scene. Presence is detected
-            from speaker cues and action text. These values are not finished-film screen time.
-          </p>
         </div>
 
         <div class="subsection-heading">
           <p class="micro-label">The focus set</p>
           <h3>Eight principal characters</h3>
           <p>
-            Character colors remain stable across the network, matrix highlighting, treemap, and
-            scene map. Color is never the only identifier: every character is also directly labeled.
+            Author's Note: character colors remain stable across the node-link network, adjacency
+            matrix, treemap, and radial layout.
           </p>
         </div>
         <div id="character-grid" class="character-grid" aria-live="polite"></div>
@@ -250,7 +236,7 @@
         <div class="dashboard-status panel" aria-live="polite">
           <div>
             <p class="micro-label">Linked selection</p>
-            <p id="selection-summary">All eight characters · select a node, cell, tile, or name to focus</p>
+            <p id="selection-summary">Select a node, cell, tile, or name to focus</p>
           </div>
           <button id="reset-selection" class="control-button" type="button">Reset all views</button>
         </div>
@@ -258,15 +244,16 @@
         <article class="viz-block" aria-labelledby="network-title">
           <div class="viz-copy">
             <p class="viz-number">View 01</p>
-            <h3 id="network-title">A smaller, legible relationship network</h3>
+            <h3 id="network-title">A much clearer and interactive relationship network</h3>
             <p>
-              Node area represents the number of screenplay scenes containing a character. Link
-              width represents shared scenes. The fixed layout prevents continuous jitter; hover
-              or select to isolate immediate relationships and retrieve exact values.
+              This view directly revises the original network while reducing clutter to eight
+              principal characters. Drag any node to reorganize the layout, hover over a node or
+              link for exact scene counts, and select a character or pair to coordinate every view.
+              Node area encodes individual scene presence; link width encodes pairwise co-presence.
             </p>
             <div class="encoding-key">
-              <span><i class="node-key"></i> Node size = scenes</span>
-              <span><i class="edge-key"></i> Link width = shared scenes</span>
+              <span><i class="node-key"></i> Node size = Number of scenes</span>
+              <span><i class="edge-key"></i> Link width = Number of shared scenes</span>
             </div>
           </div>
           <figure class="viz-panel panel">
@@ -278,11 +265,13 @@
         <article class="viz-block" aria-labelledby="matrix-title">
           <div class="viz-copy">
             <p class="viz-number">View 02</p>
-            <h3 id="matrix-title">An adjacency matrix for precise comparison</h3>
+            <h3 id="matrix-title">An adjacency matrix for more precise comparison</h3>
             <p>
-              Every off-diagonal cell reports the number of screenplay scenes shared by a pair.
-              Darker cells indicate larger values. Unlike unaligned link widths, the regular grid
-              supports lookup, ranking, and cluster detection.
+              I add this matrix because the original network’s unaligned link widths do not support
+              reliable quantitative comparison. The dataset contains all 28 unique pairs among the
+              eight characters; each symmetric off-diagonal cell reports that pair’s number of
+              shared screenplay scenes. A stronger light-to-dark scale, exact labels, and sorting
+              make pair lookup, ranking, extrema, and cluster detection substantially more precise.
             </p>
             <label class="select-label" for="matrix-sort">Order characters</label>
             <select id="matrix-sort" class="select-control">
@@ -302,9 +291,11 @@
             <p class="viz-number">View 03</p>
             <h3 id="treemap-title">A treemap of character-scene appearances</h3>
             <p>
-              Area shows each character’s share of all scene appearances accumulated by the eight
-              selected characters. This additive denominator makes the treemap a valid part-to-whole
-              display; it does <em>not</em> claim that character percentages partition movie runtime.
+              I add this treemap because connectivity and individual narrative presence answer
+              different questions. Area shows each character’s share of the 536 scene appearances
+              accumulated by the eight selected characters. This additive denominator makes the
+              view a valid part-to-whole comparison and avoids falsely claiming that overlapping
+              character appearances partition the film’s runtime.
             </p>
             <p class="formula">share = character scenes ÷ sum of all eight characters’ scenes</p>
           </div>
@@ -318,9 +309,12 @@
           <p class="micro-label">Narrative geography</p>
           <h3>Four operational spaces</h3>
           <p>
-            Scene headings are coded into four mutually exclusive macro-locations. Ship interiors
-            and general space scenes form “Outer Space / Spacecraft”; ambiguous cases follow the
-            written heading and are disclosed as a limitation.
+            Author's Note: since the whole story took place across four broad narrative spaces, I
+            am also interested in creating a space-scene-character mapping. Therefore, scene
+            headings are coded into four mutually exclusive macro-locations. Ship interiors and
+            general space scenes form “Outer Space / Spacecraft.” I checked the January 15, 1976
+            revised fourth-draft screenplay used for the analysis; ambiguous cases follow the
+            written scene heading and are disclosed as a limitation.
           </p>
         </div>
         <div class="location-grid">
@@ -335,9 +329,12 @@
             <p class="viz-number">View 04</p>
             <h3 id="radial-title">A radial scene-to-space map</h3>
             <p>
-              The large outer orbit contains screenplay scenes in narrative order. Four smaller
-              inner circles represent the operational spaces. Bundled paths connect each scene to
-              its coded space; scene-dot size reports how many principal characters are present.
+              I add this circular view because the aggregate network cannot show story order or
+              setting. The outer circle places all 300 relevant screenplay scenes in narrative
+              order; the segmented inner circle encodes the four operational spaces. Curved,
+              location-colored bundles connect each scene to its space, while scene-dot size reports
+              how many principal characters are present. Character filtering reveals where an
+              individual narrative path concentrates or crosses between spaces.
             </p>
             <label class="select-label" for="radial-character">Highlight a character</label>
             <select id="radial-character" class="select-control">
@@ -346,112 +343,167 @@
           </div>
           <figure class="viz-panel panel">
             <div class="chart-scroll"><svg id="radial-chart" role="img" aria-label="Radial map connecting screenplay scenes to four narrative spaces"></svg></div>
-            <figcaption><strong>Figure 5.</strong> Screenplay order around the outer orbit; four macro-locations within.</figcaption>
+            <figcaption><strong>Figure 5.</strong> Screenplay order on the outer circle, four macro-locations on the segmented inner circle, and bundled scene-to-space connections.</figcaption>
           </figure>
         </article>
       </section>
 
-      <section id="rationale" class="chapter section-shell section-contrast" aria-labelledby="rationale-title">
+      <section id="explanation" class="chapter section-shell section-contrast" aria-labelledby="explanation-title">
         <div class="section-heading">
           <p class="chapter-label"><span>06</span> Assignment Part 5 · Explain</p>
-          <h2 id="rationale-title">Design decisions and full report</h2>
-          <p class="section-lead">
-            Each intervention answers a specific critique. The goal is not more decoration—it is
-            a broader and more reliable set of analytical tasks.
-          </p>
+          <h2 id="explanation-title">Design Decisions Explanation</h2>
         </div>
 
         <div class="decision-grid">
-          <article class="decision-card panel"><span>01</span><h3>Filter with a declared rule</h3><p><strong>Changed:</strong> reduced the cast to eight principal characters.</p><p><strong>Why:</strong> lower visual density makes topology traceable.</p><p><strong>Addresses:</strong> crossings, occlusion, and unreadable labels.</p><p><strong>Improves:</strong> adjacency and neighborhood identification.</p></article>
-          <article class="decision-card panel"><span>02</span><h3>Add an aligned comparison view</h3><p><strong>Changed:</strong> paired the network with a numbered matrix.</p><p><strong>Why:</strong> aligned cells and luminance outperform floating widths for comparison.</p><p><strong>Addresses:</strong> ambiguous ranking and value retrieval.</p><p><strong>Improves:</strong> extrema, pair comparison, and cluster tasks.</p></article>
-          <article class="decision-card panel"><span>03</span><h3>Separate concepts of prominence</h3><p><strong>Changed:</strong> added a valid part-to-whole treemap.</p><p><strong>Why:</strong> individual presence is not the same as connectivity.</p><p><strong>Addresses:</strong> the original’s narrow information scope.</p><p><strong>Improves:</strong> comparison of scene share against network position.</p></article>
-          <article class="decision-card panel"><span>04</span><h3>Restore narrative context</h3><p><strong>Changed:</strong> connected ordered scenes to four macro-locations.</p><p><strong>Why:</strong> aggregate links hide where relationships occur.</p><p><strong>Addresses:</strong> missing sequence and setting.</p><p><strong>Improves:</strong> scene retrieval and spatial story tracing.</p></article>
+          <article class="decision-card panel">
+            <span>01</span><h3>Reduce clutter while preserving the relationship model</h3>
+            <p><strong>What changed:</strong> I retained eight declared principal characters, fixed a readable starting layout, added direct labels, and made every node draggable with node and link tooltips.</p>
+            <p><strong>Why:</strong> the original node-link metaphor is intuitive, so it should be improved rather than discarded.</p>
+            <p><strong>Problem addressed:</strong> overlapping marks, crossings, weak hierarchy, and inaccessible exact values in the original hairball.</p>
+            <p><strong>Improvement:</strong> viewers can trace neighborhoods, rearrange occluded relationships, and retrieve exact individual or pairwise scene counts while retaining a recognizable overview.</p>
+          </article>
+          <article class="decision-card panel">
+            <span>02</span><h3>Add a matrix for defensible quantitative comparison</h3>
+            <p><strong>What changed:</strong> I added an 8 × 8 adjacency matrix with exact labels, high-contrast ordered luminance, and three meaningful sort orders.</p>
+            <p><strong>Why:</strong> position in aligned rows and columns supports more accurate comparison than judging unaligned link widths.</p>
+            <p><strong>Problem addressed:</strong> the original makes close relationship strengths difficult to rank and provides no reliable lookup scale.</p>
+            <p><strong>Improvement:</strong> viewers can identify maxima, compare any pair, expose clusters, and verify the same relationship shown in the network.</p>
+          </article>
+          <article class="decision-card panel">
+            <span>03</span><h3>Separate individual presence from connectivity</h3>
+            <p><strong>What changed:</strong> I added a treemap whose area represents each character’s share of 536 total character-scene appearances among the selected eight.</p>
+            <p><strong>Why:</strong> frequent appearance and network centrality are related but distinct ideas that should not be compressed into one mark.</p>
+            <p><strong>Problem addressed:</strong> the original provides little compositional context and encourages node size to carry too much interpretive weight.</p>
+            <p><strong>Improvement:</strong> the additive denominator supports a valid part-to-whole task and lets viewers compare narrative presence against relationship structure.</p>
+          </article>
+          <article class="decision-card panel">
+            <span>04</span><h3>Restore story order and narrative space</h3>
+            <p><strong>What changed:</strong> I placed relevant scenes in screenplay order on an outer circle, divided an inner circle into four location sectors, and bundled colored scene-to-space connections.</p>
+            <p><strong>Why:</strong> aggregate social ties cannot explain where a scene occurs or how a character’s path moves through the story.</p>
+            <p><strong>Problem addressed:</strong> missing chronology, setting, and details-on-demand in the original visualization.</p>
+            <p><strong>Improvement:</strong> viewers can follow spatial concentration, filter a character’s scenes, and connect sequence and setting without confusing either with relationship strength.</p>
+          </article>
+        </div>
+
+        <div class="comparison-summary panel">
+          <h3>Original versus redesign</h3>
+          <p>
+            The original remains more comprehensive because it includes minor characters, but the
+            redesigned dashboard makes adjacency, exact pair comparison, part-to-whole presence,
+            and scene-location exploration substantially easier. The trade-offs are deliberate:
+            filtering removes minor-character context; treemap area is less precise than a bar;
+            and four macro-locations simplify ambiguous settings. These limitations are documented
+            so the broader task coverage does not overstate the screenplay-derived evidence.
+          </p>
+        </div>
+      </section>
+
+      <section id="report" class="chapter section-shell" aria-labelledby="report-section-title">
+        <div class="section-heading">
+          <p class="chapter-label"><span>07</span> Submission Report</p>
+          <h2 id="report-section-title">Full Visualization Critique and Design Report</h2>
+          <p class="section-lead">A focused report connecting the original visualization, critique, redesign decisions, comparison, limitations, figures, and sources.</p>
         </div>
 
         <article class="report panel" aria-labelledby="report-title">
           <header class="report-header">
             <div>
-              <p class="micro-label">Submission report · 500–800 words</p>
-              <h3 id="report-title">Visualization Critique and Redesign Report</h3>
+              <p class="micro-label">Required report · 500–800 words</p>
+              <h3 id="report-title">Visualization Critique and Redesign</h3>
             </div>
             <button class="control-button" type="button" onclick="window.print()">Print report</button>
           </header>
           <div id="report-body" class="report-body">
             <h4>Original visualization and context</h4>
             <p>
-              Evelina Gabasova’s <em>Episode IV: A New Hope</em> social network is a force-directed
-              node-link visualization derived from a revised screenplay. Characters form nodes;
-              two characters are connected when they speak in the same scene. Node size represents
-              the number of scenes attributed to a character, and link width represents shared
-              speaking scenes. The intended message is that screenplay interactions reveal the
-              film’s prominent characters, strongest recurring relationships, and narrative groups.
-              The primary audience is <em>Star Wars</em> fans interested in a quantitative view of
-              the film; secondary readers include visualization and digital-humanities audiences.
-              Intended tasks include identifying prominent characters, determining adjacency,
-              comparing relationship frequency, finding central or peripheral characters, and
-              recognizing clusters.
+              Evelina Gabasova’s <em>Episode IV: A New Hope</em> social network is a force-directed,
+              weighted node-link visualization derived from screenplay data. Nodes represent
+              characters; an edge connects two characters when they speak within the same scene.
+              Node size encodes the number of scenes attributed to a character, and link width
+              encodes shared speaking scenes. The published “all characters” version supplements
+              R2-D2 and Chewbacca through mention-based data because they do not speak conventional
+              dialogue. The visualization’s intended message is that screenplay interaction reveals
+              prominence, recurring relationships, and narrative groups. Its primary audience is
+              <em>Star Wars</em> fans seeking a quantitative interpretation, with visualization and
+              digital-humanities readers as a secondary audience. Intended tasks include finding
+              prominent or peripheral characters, determining whether a pair connects, comparing
+              relationship frequency, identifying bridges, and recognizing clusters.
             </p>
 
-            <h4>Critique</h4>
+            <h4>Critical evaluation</h4>
             <p>
-              The visualization has two important strengths. First, the node-link idiom is
-              perceptually intuitive for relationship data: a viewer can quickly see whether two
-              characters connect and form an overall impression of network structure. Second, it
-              presents a broad cast compactly and uses node size and link width to encode
-              quantitative attributes, making Luke and the densely connected principal group
-              visually salient.
+              Two strengths make the original a productive starting point. First, nodes and links
+              match an intuitive social-network model: adjacency and broad topology can be understood
+              without specialized statistical knowledge. Second, the compact overview includes a
+              wide cast and uses two quantitative channels, making Luke and the densely connected hero
+              group visually salient. The familiar character names also lower the entry barrier for
+              a general audience and make the network inviting to explore.
             </p>
             <p>
-              Its weaknesses limit more precise tasks. The graphic does not prominently define
-              “interaction,” node value, scene segmentation, or the mention-based approximation
-              used for R2-D2 and Chewbacca. This ambiguity can cause viewers to mistake shared
-              speaking scenes for emotional closeness or screen time. The numerous labels and
-              crossing edges also create the network “hairball” described in the course material;
-              tracing one relationship becomes difficult. In addition, unaligned edge widths are
-              harder to compare than position or aligned cells, while force-directed distance has
-              no explicit quantitative meaning. Finally, the original provides little narrative
-              context: it does not show where interactions occur, separate presence from
-              connectivity, or support exact value retrieval beyond limited hover behavior.
+              Four weaknesses limit effectiveness. The chart does not visibly define “interaction,”
+              scene segmentation, node size, link width, or the treatment of non-speaking characters;
+              viewers may therefore confuse co-occurrence with screen time or emotional closeness.
+              Numerous marks, crossing edges, and labels create a hairball with weak visual hierarchy,
+              while force-directed distance appears meaningful despite having no quantitative scale.
+              Link width is also difficult to compare across orientations because it lacks alignment,
+              ticks, or exact labels; width is a less accurate comparison channel than aligned position
+              or luminance. Node area similarly requires a legend or direct value to support precise
+              magnitude judgments. Finally, the aggregate network cannot show the composition of
+              character presence, screenplay order, or the settings where scenes occur. These are not
+              aesthetic objections: they directly obstruct lookup, comparison, clustering, and
+              narrative-context tasks identified for the intended audience.
             </p>
 
             <h4>Redesign rationale</h4>
             <p>
-              The redesign makes four connected decisions. First, it focuses on eight principal
-              characters selected before analysis and labels that scope explicitly. This sacrifices
-              cast completeness but removes clutter and makes neighborhoods traceable. Second, a
-              fixed node-link view preserves the original’s intuitive topology while an adjacency
-              matrix supplies aligned cells, ordered luminance, exact counts, and sortable rows for
-              comparison. Third, a treemap separates individual presence from relationship
-              structure. Its area encodes each character’s share of the eight characters’ combined
-              scene appearances—a genuine additive whole rather than the misleading percentage of
-              movie runtime originally considered. Fourth, a radial map places relevant scenes in
-              screenplay order and connects them to Tatooine, the Death Star, Yavin IV, or Outer
-              Space/Spacecraft. Coordinated selection links all four views and provides details on
-              demand without permanently adding clutter.
+              The redesign coordinates four complementary D3 views. First, the node-link view retains
+              the original’s intuitive structure but limits scope to eight declared principal
+              characters. A stable starting layout, direct labels, dragging, linked highlighting, and
+              node and edge tooltips reduce clutter while preserving exploratory topology. Second, an
+              8 × 8 adjacency matrix represents all 28 unique pairs using aligned cells, exact counts,
+              sortable order, and a high-contrast sequential scale. This makes maxima, close values,
+              and clusters more defensible than comparisons based only on link width. The two views
+              are intentionally redundant: the network supports topology and paths, whereas the matrix
+              supports exact pairwise comparison. Linked selection preserves their relationship.
+            </p>
+            <p>
+              Third, a treemap separates individual presence from connectivity. Area encodes each
+              character’s share of 536 character-scene appearances accumulated by the selected eight.
+              This is a valid additive whole; it deliberately does not claim that overlapping
+              character appearances partition film runtime. Fourth, a circular scene-space view adds
+              context absent from the original. Its outer circle orders 300 relevant scenes, its
+              segmented inner circle identifies Tatooine, the Death Star, Yavin IV, and Outer
+              Space/Spacecraft, and bundled colored curves connect every scene to its coded setting.
+              Filtering exposes an individual character’s spatial path. Coordinated selection across
+              all views supplies details on demand without permanently increasing clutter.
             </p>
 
-            <h4>Original versus redesign</h4>
+            <h4>Original versus redesign, trade-offs, and limitations</h4>
             <p>
-              The redesign makes pairwise comparison, exact lookup, character focusing, and
-              scene-location exploration substantially easier. It also distinguishes three ideas
-              that the original compresses: network connectivity, individual scene presence, and
-              narrative setting. Important limitations remain. The source is a January 1976 draft,
-              so deleted material and rapid cross-cutting produce screenplay scenes that differ from
-              the released film. Presence is inferred from speaker cues and action text rather than
-              measured screen time, and four macro-locations simplify ambiguous ship and battle
-              settings. Filtering also removes minor-character context, while treemap area remains
-              less precise than a sorted bar. These trade-offs are documented so viewers can use the
-              redesign for its intended comparative and exploratory tasks without overstating what
-              the data measures.
+              The dashboard makes exact pair lookup, relationship ranking, character focusing,
+              part-to-whole comparison, and scene-location exploration easier than the original.
+              It also distinguishes connectivity, individual presence, sequence, and setting instead
+              of asking one diagram to represent all four concepts. The main trade-off is scope: minor
+              characters are removed, so the original remains better for cast completeness. Treemap
+              area is less precise than a sorted bar, and four macro-locations simplify some ship and
+              battle settings. Most importantly, the source is the January 15, 1976 revised fourth
+              draft, not finished-film timing. Scene presence is inferred from speaker cues and action
+              text, and draft or rapidly cross-cut scenes may differ from the released movie. The
+              dashboard labels these limits to prevent stronger claims than the data supports. The
+              four-view approach also increases learning cost and page length, but short reading guides,
+              consistent character colors, direct labels, and coordinated interaction mitigate that
+              cost while keeping each view responsible for a clearly stated analytical task.
             </p>
 
             <h4>Figures and references</h4>
             <p class="report-references">
-              Figure 1 reproduces Gabasova’s Episode IV network under its CC BY-SA 4.0
-              license; Figures 2–5 are this project’s D3.js redesign. Sources:
-              <a href="https://evelinag.com/blog/2015/12-15-star-wars-social-network/" target="_blank" rel="noreferrer">Gabasova (2015)</a>;
-              <a href="https://zenodo.org/records/1411479" target="_blank" rel="noreferrer">archived network documentation</a>;
-              and the <a href="https://imsdb.com/scripts/Star-Wars-A-New-Hope.html" target="_blank" rel="noreferrer">January 15, 1976 revised screenplay</a>.
+              Figure 1 reproduces Gabasova’s Episode IV network under CC BY-SA 4.0; Figures 2–5 are
+              this project’s D3 redesign. Sources include
+              <a href="https://evelinag.com/blog/2015/12-15-star-wars-social-network/" target="_blank" rel="noreferrer">Gabasova’s original article</a>,
+              the <a href="https://github.com/evelinag/StarWars-social-network" target="_blank" rel="noreferrer">original code repository</a>,
+              the <a href="https://github.com/evelinag/star-wars-network-data" target="_blank" rel="noreferrer">data repository</a>,
+              the <a href="https://zenodo.org/records/1411479" target="_blank" rel="noreferrer">archived dataset</a>, and the
+              <a href="https://imsdb.com/scripts/Star-Wars-A-New-Hope.html" target="_blank" rel="noreferrer">January 15, 1976 revised screenplay</a>.
             </p>
           </div>
           <p class="report-count"><span id="report-word-count">—</span> words · Figures 1–5 appear in the project above.</p>
@@ -461,11 +513,12 @@
       <section id="conclusion" class="chapter conclusion" aria-labelledby="conclusion-title">
         <div class="conclusion-scrim" aria-hidden="true"></div>
         <div class="conclusion-content">
-          <p class="eyebrow">Chapter 07 · Conclusion</p>
-          <h2 id="conclusion-title">The network was only the beginning.</h2>
+          <p class="eyebrow">Chapter 08 · Conclusion</p>
+          <h2 id="conclusion-title">Conclusion</h2>
           <p>
-            By giving topology, comparison, composition, and narrative space their own coordinated
-            views, the redesign turns an impressive overview into an explainable analytical system.
+            Through this project, by giving topology, comparison, composition, and narrative space
+            their own coordinated views, my redesign hopefully turns an impressive overview into an
+            explainable analytical system.
           </p>
           <p class="closing-line">We hope you enjoy exploring a galaxy of data.</p>
           <a class="button button-primary" href="#overview">Return to the opening</a>
@@ -473,21 +526,37 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div>
-        <p class="brand"><span class="brand-mark" aria-hidden="true">✦</span> STATS 401 / Visualization Critique and Redesign</p>
-        <p>Educational project. <em>Star Wars</em> character and location images © Lucasfilm Ltd.; used for commentary and analysis.</p>
+    <footer class="site-footer" aria-labelledby="resources-title">
+      <div class="footer-intro">
+        <p class="brand"><span class="brand-mark" aria-hidden="true">✦</span> STATS 401 / STAR WARS EPISODE IV VISUALIZATION</p>
+        <h2 id="resources-title">Sources &amp; Supporting Links</h2>
+        <p>Every principal visualization, dataset, script, image collection, and project page used in this educational critique is linked below.</p>
       </div>
-      <div class="footer-links">
-        <a href="https://evelinag.com/blog/2015/12-15-star-wars-social-network/" target="_blank" rel="noreferrer">Original visualization</a>
-        <a href="https://zenodo.org/records/1411479" target="_blank" rel="noreferrer">Archived network data</a>
-        <a href="https://imsdb.com/scripts/Star-Wars-A-New-Hope.html" target="_blank" rel="noreferrer">Revised screenplay</a>
-        <a href="https://www.starwars.com/databank" target="_blank" rel="noreferrer">Character and location imagery</a>
-        <a href="https://github.com/SeanWan514/stats401_ind_vis_project" target="_blank" rel="noreferrer">Source code</a>
+      <div class="resource-groups">
+        <div>
+          <h3>This project</h3>
+          <a href="https://seanwan514.github.io/stats401_ind_vis_project/" target="_blank" rel="noreferrer">Live GitHub Pages project <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/SeanWan514/stats401_ind_vis_project" target="_blank" rel="noreferrer">Project GitHub repository <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/SeanWan514/stats401_ind_vis_project/blob/main/REPORT.md" target="_blank" rel="noreferrer">Standalone project report <span aria-hidden="true">↗</span></a>
+        </div>
+        <div>
+          <h3>Original visualization</h3>
+          <a href="https://evelinag.com/blog/2015/12-15-star-wars-social-network/" target="_blank" rel="noreferrer">Gabasova’s original article <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/evelinag/StarWars-social-network" target="_blank" rel="noreferrer">Original visualization code <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/evelinag/star-wars-network-data" target="_blank" rel="noreferrer">Original network data repository <span aria-hidden="true">↗</span></a>
+          <a href="https://zenodo.org/records/1411479" target="_blank" rel="noreferrer">Zenodo data archive and DOI <span aria-hidden="true">↗</span></a>
+        </div>
+        <div>
+          <h3>Screenplay &amp; imagery</h3>
+          <a href="https://imsdb.com/scripts/Star-Wars-A-New-Hope.html" target="_blank" rel="noreferrer">January 15, 1976 revised screenplay <span aria-hidden="true">↗</span></a>
+          <a href="https://www.starwars.com/databank" target="_blank" rel="noreferrer">StarWars.com Databank imagery <span aria-hidden="true">↗</span></a>
+          <a href="https://www.starwars.com/news/parenting-padawans-5-star-wars-characters-i-was-surprised-to-learn-my-kids-love" target="_blank" rel="noreferrer">Chewbacca portrait source <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
+      <p class="copyright-note">Educational project. <em>Star Wars</em> character and location images © Lucasfilm Ltd.; used for commentary and analysis.</p>
     </footer>
     <div id="chart-tooltip" class="chart-tooltip" role="status" aria-live="polite"></div>
     <script src="assets/vendor/d3.v7.min.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js?v=20260927-2"></script>
   </body>
 </html>

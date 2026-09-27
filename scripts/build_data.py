@@ -59,7 +59,7 @@ CHARACTERS = {
     "Obi-Wan Kenobi": {
         "aliases": [r"\bOBI-WAN\b", r"\bKENOBI\b", r"\bBEN\b"],
         "speakers": {"BEN", "OBI-WAN", "OBI WAN"},
-        "color": "#B79B72",
+        "color": "#D98AA4",
         "image": "assets/images/characters/obi-wan-kenobi.jpeg",
         "description": "Luke's mentor, guiding the group from Tatooine into the Death Star rescue.",
     },
@@ -80,7 +80,7 @@ CHARACTERS = {
     "Chewbacca": {
         "aliases": [r"\bCHEWBACCA\b", r"\bCHEWIE\b"],
         "speakers": {"CHEWBACCA", "CHEWIE"},
-        "color": "#8B5A35",
+        "color": "#5B3424",
         "image": "assets/images/characters/chewbacca.jpeg",
         "description": "Han's loyal copilot and a constant presence from Mos Eisley through the Rebel victory.",
     },

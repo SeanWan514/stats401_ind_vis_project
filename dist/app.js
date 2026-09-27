@@ -26,8 +26,11 @@
   };
   const moveTooltip = (event) => {
     const width = 310;
-    const left = Math.min(event.clientX + 12, window.innerWidth - width);
-    const top = Math.min(event.clientY + 12, window.innerHeight - 170);
+    const box = event.currentTarget?.getBoundingClientRect?.();
+    const clientX = Number.isFinite(event.clientX) ? event.clientX : (box?.right || 8);
+    const clientY = Number.isFinite(event.clientY) ? event.clientY : (box?.top || 8);
+    const left = Math.min(clientX + 12, window.innerWidth - width);
+    const top = Math.min(clientY + 12, window.innerHeight - 170);
     tooltip.style("left", `${Math.max(8, left)}px`).style("top", `${Math.max(8, top)}px`);
   };
   const hideTooltip = () => tooltip.classed("visible", false);
@@ -70,7 +73,7 @@
 
     const summary = d3.select("#selection-summary");
     if (!selected.size) {
-      summary.text("All eight characters · select a node, cell, tile, or name to focus");
+      summary.text("Select a node, cell, tile, or name to focus");
     } else if (selected.size === 1) {
       const name = [...selected][0];
       const c = data.charactersByName.get(name);
@@ -95,6 +98,7 @@
       .attr("tabindex", 0)
       .attr("role", "button")
       .attr("aria-pressed", "false")
+      .attr("data-character", d => d.character)
       .style("--character-color", d => d.color)
       .on("click", (_, d) => selectCharacters([d.character]))
       .on("keydown", (event, d) => {
@@ -116,7 +120,8 @@
     const width = 820, height = 590;
     const svg = d3.select("#network-chart").attr("viewBox", `0 0 ${width} ${height}`);
     svg.selectAll("*").remove();
-    svg.append("title").text("Eight-character relationship network. Node size shows scene presence; link width shows shared scenes.");
+    svg.append("title").text("Draggable eight-character relationship network. Node size shows scene presence; link width shows shared scenes.");
+    svg.append("desc").text("Drag nodes to reorganize the network. Hover or focus a node or link to retrieve exact screenplay-scene counts.");
 
     const defs = svg.append("defs");
     const glow = defs.append("filter").attr("id", "node-glow");
@@ -143,17 +148,29 @@
       d.y = Math.max(70, Math.min(height - 76, d.y));
     });
 
-    svg.append("g").selectAll("line")
+    const linkVisual = svg.append("g").selectAll("line")
       .data(links)
       .join("line")
       .attr("class", "network-link")
-      .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
-      .attr("x2", d => d.target.x).attr("y2", d => d.target.y)
-      .attr("stroke-width", d => linkWidth(d.shared_scenes))
+      .attr("stroke-width", d => linkWidth(d.shared_scenes));
+
+    const linkHit = svg.append("g").selectAll("line")
+      .data(links)
+      .join("line")
+      .attr("class", "network-link-hit")
+      .attr("stroke-width", d => Math.max(16, linkWidth(d.shared_scenes) + 9))
+      .attr("tabindex", 0)
+      .attr("role", "button")
+      .attr("aria-label", d => `${d.source.id} and ${d.target.id}, ${d.shared_scenes} shared screenplay scenes`)
       .on("mouseenter", (event, d) => showTooltip(event,
         `<strong>${d.source.id} + ${d.target.id}</strong><br>${d.shared_scenes} shared screenplay scenes`))
       .on("mousemove", moveTooltip).on("mouseleave", hideTooltip)
-      .on("click", (_, d) => selectCharacters([d.source.id, d.target.id]));
+      .on("focus", (event, d) => showTooltip(event, `<strong>${d.source.id} + ${d.target.id}</strong><br>${d.shared_scenes} shared screenplay scenes`))
+      .on("blur", hideTooltip)
+      .on("click", (_, d) => selectCharacters([d.source.id, d.target.id]))
+      .on("keydown", (event, d) => {
+        if (event.key === "Enter" || event.key === " ") selectCharacters([d.source.id, d.target.id]);
+      });
 
     const node = svg.append("g").selectAll("g")
       .data(nodes)
@@ -167,6 +184,12 @@
         `<strong>${d.character}</strong><br>${compact(d.scene_count)} screenplay scenes<br>${compact(d.dialogue_words)} script dialogue words`))
       .on("mousemove", moveTooltip).on("mouseleave", hideTooltip)
       .on("click", (_, d) => selectCharacters([d.character]))
+      .on("dblclick", (event, d) => {
+        event.stopPropagation();
+        d.fx = null;
+        d.fy = null;
+        simulation.alpha(.45).restart();
+      })
       .on("keydown", (event, d) => {
         if (event.key === "Enter" || event.key === " ") selectCharacters([d.character]);
       });
@@ -186,6 +209,37 @@
       .attr("text-anchor", "middle")
       .attr("y", d => radius(d.scene_count) + 35)
       .text(d => `${d.scene_count} scenes`);
+
+    function ticked() {
+      nodes.forEach(d => {
+        d.x = Math.max(62, Math.min(width - 62, d.x));
+        d.y = Math.max(62, Math.min(height - 76, d.y));
+      });
+      linkVisual
+        .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+      linkHit
+        .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+      node.attr("transform", d => `translate(${d.x},${d.y})`);
+    }
+
+    node.call(d3.drag()
+      .on("start", (event, d) => {
+        if (!event.active) simulation.alphaTarget(.16).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      })
+      .on("drag", (event, d) => {
+        d.fx = Math.max(62, Math.min(width - 62, event.x));
+        d.fy = Math.max(62, Math.min(height - 76, event.y));
+        ticked();
+      })
+      .on("end", event => {
+        if (!event.active) simulation.alphaTarget(0);
+      }));
+    simulation.on("tick", ticked);
+    ticked();
   }
 
   function matrixValue(a, b) {
@@ -209,7 +263,7 @@
     const size = Math.min(width - margin.left - margin.right, height - margin.top - margin.bottom);
     const band = d3.scaleBand().domain(order).range([0, size]).padding(.045);
     const maxValue = d3.max(data.relationships, d => d.shared_scenes);
-    const color = d3.scaleSequential().domain([0, maxValue]).interpolator(t => d3.interpolateRgb("#e8edf4", "#163f78")(Math.pow(t, .72)));
+    const color = d3.scaleSequential().domain([0, maxValue]).interpolator(t => d3.interpolateRgb("#f4f7fb", "#020817")(Math.pow(t, .72)));
     const cells = order.flatMap(row => order.map(col => ({ row, col, value: matrixValue(row, col) })));
     const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -249,7 +303,7 @@
     cell.append("text")
       .attr("x", band.bandwidth() / 2).attr("y", band.bandwidth() / 2)
       .attr("dy", ".35em").attr("text-anchor", "middle")
-      .attr("fill", d => d.value === null || d.value > maxValue * .44 ? "#f7f2e7" : "#101621")
+      .attr("fill", d => d.value === null || d.value > maxValue * .34 ? "#f7f2e7" : "#101621")
       .attr("font-size", 12).attr("font-weight", 700)
       .text(d => d.value === null ? "—" : d.value);
 
@@ -299,47 +353,89 @@
       .text(d => `${d.value} scenes · ${percent(d.value / total)}`);
   }
 
-  function radialPath(scene, hub, center, innerRadius, outerRadius) {
-    const angle = scene.angle;
-    const sx = center.x + Math.cos(angle) * outerRadius;
-    const sy = center.y + Math.sin(angle) * outerRadius;
-    const ix = center.x + Math.cos(angle) * innerRadius;
-    const iy = center.y + Math.sin(angle) * innerRadius;
-    return `M${sx},${sy} Q${ix},${iy} ${hub.x},${hub.y}`;
-  }
-
   function renderRadial() {
-    const width = 820, height = 760, center = { x: width / 2, y: height / 2 }, outerRadius = 310, innerRadius = 205;
+    const width = 820, height = 760, center = { x: width / 2, y: height / 2 };
+    const outerRadius = 310, bundleRadius = 222, innerOuterRadius = 174, innerInnerRadius = 92;
     const svg = d3.select("#radial-chart").attr("viewBox", `0 0 ${width} ${height}`);
     svg.selectAll("*").remove();
-    const scenes = data.scenes.map((d, i) => ({ ...d, angle: -Math.PI / 2 + i / data.scenes.length * Math.PI * 2 }));
-    const hubs = new Map(locations.map((name, i) => {
-      const angle = -Math.PI / 2 + i / locations.length * Math.PI * 2;
-      return [name, { name, angle, x: center.x + Math.cos(angle) * 103, y: center.y + Math.sin(angle) * 103 }];
+    svg.append("title").text("Circular scene-to-space map with 300 screenplay scenes and four inner location sectors.");
+    svg.append("desc").text("Scenes appear in narrative order around the outer circle. Curved, location-colored bundles connect each scene to one of four sectors in the inner circle.");
+    const scenes = data.scenes.map((d, i) => ({ ...d, angle: i / data.scenes.length * Math.PI * 2 }));
+    const sectorAngle = Math.PI * 2 / locations.length;
+    const sectors = locations.map((name, i) => ({
+      name,
+      startAngle: i * sectorAngle,
+      endAngle: (i + 1) * sectorAngle,
+      midAngle: (i + .5) * sectorAngle,
+      count: scenes.filter(scene => scene.macro_location === name).length
     }));
+    const sectorByName = new Map(sectors.map(d => [d.name, d]));
     const selectedName = state.radialCharacter;
     const isActiveScene = d => selectedName === "all" || d.characters.includes(selectedName);
     const sceneRadius = d3.scaleSqrt().domain([1, d3.max(scenes, d => d.character_count)]).range([2.4, 6.8]);
+    const radialLine = d3.lineRadial()
+      .angle(d => d.angle)
+      .radius(d => d.radius)
+      .curve(d3.curveBundle.beta(.88));
+    const arc = d3.arc().innerRadius(innerInnerRadius).outerRadius(innerOuterRadius).padAngle(.022).cornerRadius(3);
+    const root = svg.append("g").attr("transform", `translate(${center.x},${center.y})`);
 
-    svg.append("circle").attr("cx", center.x).attr("cy", center.y).attr("r", outerRadius)
+    root.append("circle").attr("r", outerRadius)
       .attr("fill", "none").attr("stroke", "rgba(244,207,99,.26)").attr("stroke-width", 1.2);
-    svg.append("circle").attr("cx", center.x).attr("cy", center.y).attr("r", outerRadius + 22)
+    root.append("circle").attr("r", outerRadius + 22)
       .attr("fill", "none").attr("stroke", "rgba(255,255,255,.07)").attr("stroke-dasharray", "2 8");
 
-    svg.append("g").selectAll("path")
+    root.append("g").selectAll("path")
       .data(scenes).join("path")
       .attr("class", "radial-edge")
-      .attr("d", d => radialPath(d, hubs.get(d.macro_location), center, innerRadius, outerRadius))
+      .attr("d", d => {
+        const sector = sectorByName.get(d.macro_location);
+        return radialLine([
+          { angle: d.angle, radius: outerRadius - 3 },
+          { angle: d.angle, radius: bundleRadius },
+          { angle: sector.midAngle, radius: bundleRadius - 20 },
+          { angle: sector.midAngle, radius: innerOuterRadius - 2 }
+        ]);
+      })
       .attr("fill", "none")
       .attr("stroke", d => locationColors.get(d.macro_location))
-      .attr("stroke-width", d => isActiveScene(d) ? 1.1 : .35)
-      .attr("stroke-opacity", d => isActiveScene(d) ? (selectedName === "all" ? .2 : .58) : .025);
+      .attr("stroke-linecap", "round")
+      .attr("stroke-width", d => isActiveScene(d) ? (selectedName === "all" ? 1.05 : 1.9) : .45)
+      .attr("stroke-opacity", d => isActiveScene(d) ? (selectedName === "all" ? .28 : .76) : .035);
 
-    const scene = svg.append("g").selectAll("circle")
+    const inner = root.append("g").selectAll("g")
+      .data(sectors).join("g")
+      .attr("class", "location-sector")
+      .on("mouseenter", (event, d) => showTooltip(event, `<strong>${d.name}</strong><br>${d.count} relevant screenplay scenes`))
+      .on("mousemove", moveTooltip).on("mouseleave", hideTooltip);
+    inner.append("path")
+      .attr("d", arc)
+      .attr("fill", d => d3.color(locationColors.get(d.name)).darker(.85))
+      .attr("stroke", d => locationColors.get(d.name))
+      .attr("stroke-width", 2.5);
+    inner.each(function(d) {
+      const labelRadius = (innerInnerRadius + innerOuterRadius) / 2;
+      const x = Math.sin(d.midAngle) * labelRadius;
+      const y = -Math.cos(d.midAngle) * labelRadius;
+      const lines = d.name === "Outer Space / Spacecraft" ? ["Outer Space", "/ Spacecraft"] : [d.name];
+      const label = d3.select(this).append("text")
+        .attr("transform", `translate(${x},${y})`)
+        .attr("text-anchor", "middle")
+        .attr("fill", "#fff")
+        .attr("font-size", 11)
+        .attr("font-weight", 750)
+        .attr("paint-order", "stroke")
+        .attr("stroke", "rgba(5,8,14,.65)")
+        .attr("stroke-width", 3);
+      lines.forEach((line, i) => label.append("tspan").attr("x", 0).attr("dy", i === 0 ? -5 : 13).text(line));
+      label.append("tspan").attr("x", 0).attr("dy", 15).attr("font-size", 10).attr("font-weight", 500).text(`${d.count} scenes`);
+    });
+
+    const scene = root.append("g").selectAll("circle")
       .data(scenes).join("circle")
       .attr("class", "radial-scene")
-      .attr("cx", d => center.x + Math.cos(d.angle) * outerRadius)
-      .attr("cy", d => center.y + Math.sin(d.angle) * outerRadius)
+      .attr("cx", d => Math.sin(d.angle) * outerRadius)
+      .attr("cy", d => -Math.cos(d.angle) * outerRadius)
       .attr("r", d => sceneRadius(d.character_count))
       .attr("fill", d => locationColors.get(d.macro_location))
       .attr("stroke", d => isActiveScene(d) && selectedName !== "all" ? "#fff" : "rgba(255,255,255,.45)")
@@ -351,20 +447,20 @@
         `<strong>Scene ${d.scene_order}</strong><br>${d.heading}<br><span>${d.macro_location}</span><br>${d.characters.join(", ")}`))
       .on("mousemove", moveTooltip).on("mouseleave", hideTooltip);
 
-    const hub = svg.append("g").selectAll("g")
-      .data([...hubs.values()]).join("g").attr("transform", d => `translate(${d.x},${d.y})`);
-    hub.append("circle").attr("r", 52).attr("fill", d => d3.color(locationColors.get(d.name)).darker(1.8))
-      .attr("stroke", d => locationColors.get(d.name)).attr("stroke-width", 2);
-    hub.append("text").attr("text-anchor", "middle").attr("fill", "#fff").attr("font-size", 11).attr("font-weight", 700)
-      .each(function(d) {
-        const lines = d.name === "Outer Space / Spacecraft" ? ["Outer Space", "/ Spacecraft"] : [d.name];
-        d3.select(this).selectAll("tspan").data(lines).join("tspan").attr("x", 0).attr("dy", (_, i) => i ? 14 : -2).text(x => x);
-      });
-    hub.append("text").attr("text-anchor", "middle").attr("y", 27).attr("fill", "rgba(255,255,255,.7)").attr("font-size", 10)
-      .text(d => `${scenes.filter(s => s.macro_location === d.name).length} scenes`);
-    svg.append("text").attr("x", center.x).attr("y", center.y - 8).attr("text-anchor", "middle")
+    const ordinalLabels = [0, 74, 149, 224, 299].map(i => scenes[i]);
+    root.append("g").selectAll("text")
+      .data(ordinalLabels).join("text")
+      .attr("x", d => Math.sin(d.angle) * (outerRadius + 30))
+      .attr("y", d => -Math.cos(d.angle) * (outerRadius + 30))
+      .attr("text-anchor", d => Math.sin(d.angle) > .2 ? "start" : Math.sin(d.angle) < -.2 ? "end" : "middle")
+      .attr("dominant-baseline", "middle")
+      .attr("fill", "#aeb6c6").attr("font-size", 10)
+      .text(d => `Scene ${d.scene_order}`);
+
+    root.append("circle").attr("r", innerInnerRadius - 5).attr("fill", "#080d17").attr("stroke", "rgba(244,207,99,.24)");
+    root.append("text").attr("y", -8).attr("text-anchor", "middle")
       .attr("fill", "#f4cf63").attr("font-family", "Orbitron, sans-serif").attr("font-size", 14).attr("font-weight", 800).text("A NEW HOPE");
-    svg.append("text").attr("x", center.x).attr("y", center.y + 13).attr("text-anchor", "middle")
+    root.append("text").attr("y", 13).attr("text-anchor", "middle")
       .attr("fill", "#aeb6c6").attr("font-size", 11).text(selectedName === "all" ? "300 relevant scenes" : shortName.get(selectedName));
     updateRadialEmphasis();
   }
@@ -373,7 +469,11 @@
     if (!data) return;
     const selected = new Set(state.selectedCharacters);
     if (state.radialCharacter !== "all" || selected.size === 0) return;
-    d3.selectAll(".radial-scene").attr("opacity", d => selected.size === 0 || d.characters.some(x => selected.has(x)) ? 1 : .1);
+    const active = d => d.characters.some(x => selected.has(x));
+    d3.selectAll(".radial-scene").attr("opacity", d => active(d) ? 1 : .1);
+    d3.selectAll(".radial-edge")
+      .attr("stroke-width", d => active(d) ? 1.8 : .45)
+      .attr("stroke-opacity", d => active(d) ? .7 : .035);
   }
 
   function countReportWords() {
@@ -441,6 +541,7 @@
         state.selectedCharacters = [];
         state.radialCharacter = "all";
         d3.select("#radial-character").property("value", "all");
+        renderNetwork();
         renderRadial();
         updateLinkedViews();
       });
